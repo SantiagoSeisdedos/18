@@ -92,18 +92,5 @@
     "thumbnail": "https://http2.mlstatic.com/D_NQ_NP_2X_780009-MLA48833034770_012022-F.webp",
     "code": "HS1-CO",
     "stock": 354
-  },
-  {
-    "id": 12,
-    "title": "Paso De Los Toros",
-    "description": "Gaseosa Paso De Los Toros Sin Azúcares 1,5l Pomelo",
-    "price": 805,
-    "thumbnail": [
-      "1700854104528-PDLT.png"
-    ],
-    "code": "PDLT-A0",
-    "stock": 100,
-    "status": true,
-    "category": "10% off"
   }
 ]
