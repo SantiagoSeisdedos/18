@@ -1,0 +1,19 @@
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px;
+}
+
+.product-grid img {
+  max-width: 100%;
+  height: auto;
+}
+
+.product-grid li {
+  list-style: none;
+  text-align: center;
+}
+
+.product-item img {
+  cursor: pointer; /* Cambiar el cursor a pointer */
+}
