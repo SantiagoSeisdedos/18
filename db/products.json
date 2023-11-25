@@ -3,7 +3,7 @@
     "id": 1,
     "title": "Sprite!",
     "description": "Gaseosa Sprite Original 354ml.",
-    "price": 393,
+    "price": "$ 393",
     "thumbnail": [
       "https://http2.mlstatic.com/D_NQ_NP_2X_913242-MLA72693322118_112023-F.webp"
     ],
@@ -16,7 +16,7 @@
     "id": 2,
     "title": "Coca-Cola",
     "description": "Gaseosa Coca-cola Sabor Original 354 Ml",
-    "price": 850,
+    "price": "$ 850",
     "thumbnail": "https://http2.mlstatic.com/D_NQ_NP_2X_877850-MLA49961094143_052022-F.webp",
     "code": "CC1",
     "stock": 100
@@ -25,7 +25,7 @@
     "id": 3,
     "title": "PEPSI",
     "description": "Gaseosa Pepsi Lata 354 Cc",
-    "price": 224,
+    "price": "$ 224",
     "thumbnail": "https://http2.mlstatic.com/D_NQ_NP_2X_910631-MLA49966614930_052022-F.webp",
     "code": "P1",
     "stock": 150
@@ -34,7 +34,7 @@
     "id": 4,
     "title": "Fanta Maracuya",
     "description": "Fanta Maracuya Original De Brasil 350ml",
-    "price": 2.199,
+    "price": "$ 2.199",
     "thumbnail": "https://http2.mlstatic.com/D_NQ_NP_2X_820788-MLU70622658776_072023-F.webp",
     "code": "FM1",
     "stock": 15
@@ -43,7 +43,7 @@
     "id": 5,
     "title": "Fanta",
     "description": "Fanta Naranja Lata Gaseosa Original",
-    "price": 989,
+    "price": "$ 989",
     "thumbnail": "https://http2.mlstatic.com/D_NQ_NP_2X_820788-MLU70622658776_072023-F.webp",
     "code": "FO1",
     "stock": 100
@@ -52,7 +52,7 @@
     "id": 6,
     "title": "Fanta Uva",
     "description": "Fanta Uva Original De Brasil 350ml",
-    "price": 2.051,
+    "price": "$ 2.051",
     "thumbnail": "https://http2.mlstatic.com/D_NQ_NP_2X_809472-MLA50099375671_052022-F.webp",
     "code": "FU1",
     "stock": 25
@@ -61,7 +61,7 @@
     "id": 7,
     "title": "Fanta Misterio",
     "description": "Gaseosa Fanta Misterio ( E. Limitada) 350ml - Origen Brasil",
-    "price": 2.392,
+    "price": "$ 2.392",
     "thumbnail": "https://http2.mlstatic.com/D_NQ_NP_2X_832144-MLA71681000696_092023-F.webp",
     "code": "FMEL1",
     "stock": 75
@@ -70,7 +70,7 @@
     "id": 8,
     "title": "Sunkist SPARKLING",
     "description": "Gaseosa Sabor Pomelo Sunkist 355 Ml.",
-    "price": 1.612,
+    "price": "$ 1.612",
     "thumbnail": "https://http2.mlstatic.com/D_NQ_NP_2X_975939-MLA49880068133_052022-F.webp",
     "code": "SSPAR1",
     "stock": 35
@@ -79,7 +79,7 @@
     "id": 9,
     "title": "Sunny Ananá",
     "description": "Gaseosa Sunny Sabor Ananá 250 Ml - Origen Corea",
-    "price": 1.619,
+    "price": "$ 1.619",
     "thumbnail": "https://http2.mlstatic.com/D_NQ_NP_2X_656341-MLA50035951510_052022-F.webp",
     "code": "SA1-CO",
     "stock": 354
@@ -88,7 +88,7 @@
     "id": 10,
     "title": "Hachi Sandia",
     "description": "Gaseosa hachi Sabor Sandia 330 Ml - Origen Corea",
-    "price": 2.829,
+    "price": "$ 2.829",
     "thumbnail": "https://http2.mlstatic.com/D_NQ_NP_2X_780009-MLA48833034770_012022-F.webp",
     "code": "HS1-CO",
     "stock": 354

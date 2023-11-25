@@ -58,7 +58,7 @@ class ProductManager {
         id: this.#nextId++,
         title,
         description,
-        price,
+        price: `$ ${price}`,
         thumbnail,
         code,
         stock,

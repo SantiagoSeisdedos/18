@@ -1,6 +1,15 @@
 const form = document.querySelector("form");
 const productList = document.getElementById("productList");
 
+const validMembers = [
+  "admin",
+  "santi",
+  "jose",
+  "tutor",
+  "marian",
+  "Jose Mariano",
+];
+
 const uploadImage = async (imageFile) => {
   try {
     const formData = new FormData();
@@ -22,14 +31,12 @@ const uploadImage = async (imageFile) => {
   }
 };
 
-const validMembers = [
-  "admin",
-  "santi",
-  "jose",
-  "tutor",
-  "marian",
-  "Jose Mariano",
-];
+const updateHeader = (username) => {
+  const productHeader = document.getElementById("productHeader");
+  if (productHeader) {
+    productHeader.textContent = `Listado de Productos - ${username}`;
+  }
+};
 
 // Enter username
 Swal.fire({
@@ -70,13 +77,6 @@ Swal.fire({
     });
   }
 });
-
-const updateHeader = (username) => {
-  const productHeader = document.getElementById("productHeader");
-  if (productHeader) {
-    productHeader.textContent = `Listado de Productos - ${username}`;
-  }
-};
 
 const sendProductData = async (username) => {
   const socket = io({
@@ -127,11 +127,11 @@ const sendProductData = async (username) => {
       title,
       description,
       price,
+      thumbnail,
       code,
-      stock,
       status,
-      category,
-      thumbnail
+      stock,
+      category
     );
     form.reset();
   });
@@ -160,6 +160,7 @@ const sendProductData = async (username) => {
     });
   });
 
+  // Get products
   socket.on("getProducts", (products) => {
     productList.innerHTML = "";
     for (const product of products) {
@@ -185,6 +186,7 @@ const sendProductData = async (username) => {
       const price = document.createElement("p");
       price.textContent = `${product.price}`;
 
+      // Delete Product
       const deleteButton = document.createElement("button");
       deleteButton.textContent = "Eliminar";
       deleteButton.addEventListener("click", () => {

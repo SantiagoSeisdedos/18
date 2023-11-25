@@ -71,7 +71,7 @@ export async function addProduct(req, res) {
       data: product,
     });
   } catch (error) {
-    res.status(400).json({ error: error.message });
+    res.status(400).json({ error: error });
   }
 }
 
@@ -111,7 +111,7 @@ export async function updateProductById(req, res) {
   }
 }
 
-// TBU
+// Working
 export async function deleteProductById(req, res) {
   try {
     if (!req.params.id) {
