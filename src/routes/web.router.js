@@ -14,11 +14,20 @@ webRouter.get("/", (req, res) => {
 
 webRouter.get("/realTimeProducts", (req, res) => {
   try {
-    console.log("Cliente conectado");
+    console.log("Cliente conectado al realtime!");
     res.render("realTimeProducts.handlebars", { title: "Real Time Products" });
   } catch (error) {
     console.log(error);
     res.status(500).json({ message: "Error loading products" });
+  }
+});
+
+webRouter.get("/chat", (req, res) => {
+  try {
+    console.log("Cliente conectado al chat!");
+    res.render("chat.handlebars", { title: "Chat" });
+  } catch (error) {
+    console.log("route CHAT error: ", error);
   }
 });
 

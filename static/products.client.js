@@ -84,7 +84,7 @@ const sendProductData = async (username) => {
       username,
     },
   });
-  console.log("Cliente conectado");
+  console.log("Cliente conectado al realtime!");
   // send message/product
   form?.addEventListener("submit", async (event) => {
     event.preventDefault();
@@ -189,6 +189,7 @@ const sendProductData = async (username) => {
       // Delete Product
       const deleteButton = document.createElement("button");
       deleteButton.textContent = "Eliminar";
+
       deleteButton.addEventListener("click", () => {
         Swal.fire({
           title: "Confirmación",
@@ -198,10 +199,7 @@ const sendProductData = async (username) => {
           confirmButtonText: "Eliminar",
           cancelButtonText: "Cancelar",
         }).then((result) => {
-          if (result.isConfirmed) {
-            const productId = product.id;
-            socket.emit("deleteProduct", productId);
-          }
+          if (result.isConfirmed) socket.emit("deleteProduct", product._id);
         });
       });
 

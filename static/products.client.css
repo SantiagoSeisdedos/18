@@ -1,6 +1,6 @@
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(5, 3fr);
   grid-gap: 20px;
 }
 
@@ -16,4 +16,9 @@
 
 .product-item img {
   cursor: pointer; /* Cambiar el cursor a pointer */
+}
+
+body {
+  background-color: #303030;
+  color: #fff;
 }
