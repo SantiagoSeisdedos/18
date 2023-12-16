@@ -6,8 +6,45 @@ export const productsRouter = Router();
 // GET
 productsRouter.get("/", async (req, res) => {
   try {
-    const products = await productModel.find().lean();
-    res.status(200).json(products);
+    let { limit = 5, page = 1, sort, query } = req.query;
+
+    limit = parseInt(limit);
+    page = parseInt(page);
+
+    const options = {
+      page,
+      limit,
+      lean: true,
+      sort:
+        sort === "desc" ? { price: -1 } : sort === "asc" ? { price: 1 } : null,
+    };
+
+    // Configurar el filtro basado en la query
+    const filter = query ? { category: query } : {};
+
+    // Ejecutar la consulta paginada
+    const products = await productModel.paginate(filter, options);
+
+    // Construir la respuesta
+    const response = {
+      status: "success",
+      hasDocuments: products.docs.length > 0,
+      payload: products.docs,
+      totalPages: products.totalPages,
+      prevPage: products.hasPrevPage ? page - 1 : null,
+      nextPage: products.hasNextPage ? page + 1 : null,
+      page,
+      hasPrevPage: products.hasPrevPage,
+      hasNextPage: products.hasNextPage,
+      prevLink: products.hasPrevPage
+        ? `/api/products?limit=${limit}&page=${page - 1}`
+        : null,
+      nextLink: products.hasNextPage
+        ? `/api/products?limit=${limit}&page=${page + 1}`
+        : null,
+    };
+
+    res.status(200).json(response);
   } catch (error) {
     console.log("Error al obtener los productos con mongoose: ", error);
     res.status(500).json({ error: error.message });

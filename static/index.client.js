@@ -10,12 +10,14 @@ const initialize = async () => {
   const response = await fetch("/api/products");
   const products = await response.json();
 
-  productList.innerHTML = "";
-  for (const product of products) {
-    const li = document.createElement("li");
-    li.innerHTML = `${product?.title}: ${product?.price}`;
-    productList?.appendChild(li);
-  }
+  console.log("products", products);
+
+  // productList.innerHTML = "";
+  // for (const product of products.payload) {
+  //   const li = document.createElement("li");
+  //   li.innerHTML = `${product?.title}: ${product?.price}`;
+  //   productList?.appendChild(li);
+  // }
 };
 
 initialize();

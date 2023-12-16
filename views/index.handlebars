@@ -1,7 +1,3 @@
-<h1>Listado de Productos</h1>
-
-<div id="validMemberMessage"></div>
-<ul id="productList"></ul>
 <a href="http://localhost:8080/realTimeProducts" target="_self">
   <button>Ir a Real Time Products</button>
 </a>
@@ -9,6 +5,20 @@
 <a href="http://localhost:8080/chat" target="_self">
   <button>Ir al chat</button>
 </a>
+
+<h1>Listado de Productos</h1>
+
+<div id="validMemberMessage"></div>
+{{#if hasDocuments}}
+  {{#each payload}}
+    <li>
+      <p>Nombre: {{this.title}}</p>
+      <p>Precio: {{this.price}}</p>
+    </li>
+  {{/each}}
+{{else}}
+  <p>No hay productos cargados</p>
+{{/if}}
 
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="/socket.io/socket.io.js"></script>
