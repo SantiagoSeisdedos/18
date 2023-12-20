@@ -1,6 +1,5 @@
 [
   {
-    "id": 1,
     "title": "Sprite!",
     "description": "Gaseosa Sprite Original 354ml.",
     "price": "$ 393",
@@ -13,7 +12,6 @@
     "category": "10% off"
   },
   {
-    "id": 2,
     "title": "Coca-Cola",
     "description": "Gaseosa Coca-cola Sabor Original 354 Ml",
     "price": "$ 850",
@@ -22,7 +20,6 @@
     "stock": 100
   },
   {
-    "id": 3,
     "title": "PEPSI",
     "description": "Gaseosa Pepsi Lata 354 Cc",
     "price": "$ 224",
@@ -31,7 +28,6 @@
     "stock": 150
   },
   {
-    "id": 4,
     "title": "Fanta Maracuya",
     "description": "Fanta Maracuya Original De Brasil 350ml",
     "price": "$ 2.199",
@@ -40,7 +36,6 @@
     "stock": 15
   },
   {
-    "id": 5,
     "title": "Fanta",
     "description": "Fanta Naranja Lata Gaseosa Original",
     "price": "$ 989",
@@ -49,7 +44,6 @@
     "stock": 100
   },
   {
-    "id": 6,
     "title": "Fanta Uva",
     "description": "Fanta Uva Original De Brasil 350ml",
     "price": "$ 2.051",
@@ -58,7 +52,6 @@
     "stock": 25
   },
   {
-    "id": 7,
     "title": "Fanta Misterio",
     "description": "Gaseosa Fanta Misterio ( E. Limitada) 350ml - Origen Brasil",
     "price": "$ 2.392",
@@ -67,7 +60,6 @@
     "stock": 75
   },
   {
-    "id": 8,
     "title": "Sunkist SPARKLING",
     "description": "Gaseosa Sabor Pomelo Sunkist 355 Ml.",
     "price": "$ 1.612",
@@ -76,7 +68,6 @@
     "stock": 35
   },
   {
-    "id": 9,
     "title": "Sunny Ananá",
     "description": "Gaseosa Sunny Sabor Ananá 250 Ml - Origen Corea",
     "price": "$ 1.619",
@@ -85,7 +76,6 @@
     "stock": 354
   },
   {
-    "id": 10,
     "title": "Hachi Sandia",
     "description": "Gaseosa hachi Sabor Sandia 330 Ml - Origen Corea",
     "price": "$ 2.829",

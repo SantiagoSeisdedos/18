@@ -1,0 +1,30 @@
+<div class="product-details-container">
+  <div class="product-details">
+    <h1>Detalles del Producto</h1>
+    <h2>{{ product.title }}</h2>
+    <p><strong>Descripción:</strong> {{ product.description }}</p>
+    <p><strong>Precio:</strong> ${{ product.price }}</p>
+    <p><strong>Categoría:</strong> {{ product.category }}</p>
+    <p><strong>Código:</strong> {{ product.code }}</p>
+    <p><strong>Stock:</strong> {{ product.stock }}</p>
+    <button id="addToCartBtn">Agregar al Carrito</button>
+  </div>
+  <div class="product-image">
+    {{#if product.thumbnail}}
+      {{#each product.thumbnail}}
+        <img src="{{ ../baseUrl }}{{ this }}" alt="Imagen del Producto">
+      {{/each}}
+    {{/if}}
+  </div>
+</div>
+
+<script>
+  const addToCartBtn = document.getElementById('addToCartBtn');
+  addToCartBtn.addEventListener('click', () => {
+    console.log('Por defecto utilizaremos siempre el carro con id: 93ec2895-17e2-462e-b9f4-0a3963428f7a');
+    window.location.replace("/carts/93ec2895-17e2-462e-b9f4-0a3963428f7a")
+    });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="/socket.io/socket.io.js"></script>

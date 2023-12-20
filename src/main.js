@@ -18,7 +18,7 @@ app.use(express.urlencoded({ extended: true }));
 
 const server = app.listen(8080, () => {
   const DB_STATUS = mongoose.connect(MONGODB_URL);
-  if (DB_STATUS) console.log(`Base de datos en linea! Conectado: ${BASE_URL}`);
+  if (DB_STATUS) console.log(`Base de datos en linea! Conectado: ${BASE_URL}/products`);
 });
 
 // Socket.io
@@ -36,3 +36,5 @@ app.use(express.static("static"));
 // routers
 app.use("/", webRouter);
 app.use("/api", apiRouter);
+
+// 03:12:00

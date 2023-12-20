@@ -1,0 +1,18 @@
+/* productDetails CSS */
+.cart-details-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #101010;
+  border-radius: 10px;
+}
+
+.cart-details {
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #303030;
+  color: #fff;
+}

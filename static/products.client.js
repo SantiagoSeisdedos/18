@@ -163,7 +163,7 @@ const sendProductData = async (username) => {
   // Get products
   socket.on("getProducts", (products) => {
     productList.innerHTML = "";
-    for (const product of products) {
+    for (const product of products.docs) {
       const productItem = document.createElement("div");
       productItem.classList.add("product-item");
 

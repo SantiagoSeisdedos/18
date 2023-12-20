@@ -1,0 +1,21 @@
+<div class="cart-details-container">
+  <div class="cart-details">
+    <h1>Detalles del Carro</h1>
+    <button id="goBackButton">Volver</button>
+  </div>
+  <div>
+    <ul>
+      {{#each cart.products}}
+        <li>
+          <h2>Producto ID: {{this._id}}</h2>
+          <p>Cantidad: {{this.quantity}}</p>
+        </li>
+      {{/each}}
+    </ul>
+  </div>
+</div>
+
+<script>
+  const goBackButton = document.getElementById('goBackButton');
+  goBackButton.addEventListener('click', () => { history.back() });
+</script>

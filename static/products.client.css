@@ -1,3 +1,4 @@
+/* Realtime Products */
 .product-grid {
   display: grid;
   grid-template-columns: repeat(5, 3fr);
@@ -21,4 +22,34 @@
 body {
   background-color: #303030;
   color: #fff;
+}
+
+/* Products List (index) */
+/* Estilos para los enlaces de productos */
+.product-list a {
+  display: block;
+  margin-bottom: 10px; /* Espacio entre enlaces */
+  color: #007bff; /* Color del texto */
+  text-decoration: none; /* Elimina la decoración de subrayado */
+  font-size: 16px; /* Tamaño de la fuente */
+}
+
+.product-list a:hover {
+  color: purple; /* Cambia el color al pasar el cursor sobre los enlaces */
+}
+
+/* Estilos para los botones de paginación */
+.pagination a {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-right: 5px; /* Espacio entre botones de paginación */
+  background-color: #007bff;
+  color: #ffffff;
+  text-decoration: none;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+}
+
+.pagination a:hover {
+  background-color: #0056b3;
 }
