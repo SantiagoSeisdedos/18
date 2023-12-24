@@ -1,0 +1,31 @@
+/* Estilos para la barra de navegación */
+footer nav {
+    border-bottom: 1px solid #ccc; /* Línea separadora en la parte inferior */
+    padding-bottom: 10px; /* Espacio en la parte inferior */
+  }
+  
+  /* Estilos para los botones en la barra de navegación */
+  footer nav ul {
+    list-style: none; /* Quita los estilos de la lista */
+    padding: 0;
+  }
+  
+  footer nav ul {
+    display: inline-block; /* Coloca los botones en línea */
+    margin-right: 10px; /* Espacio entre botones */
+  }
+  
+  footer nav ul button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    text-decoration: none;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  footer nav ul button:hover {
+    background-color: #0056b3; /* Cambia el color al pasar el cursor sobre los botones */
+  }
+  

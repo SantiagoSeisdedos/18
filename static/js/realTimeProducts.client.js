@@ -53,7 +53,7 @@ Swal.fire({
       icon: "error",
       confirmButtonText: "Ok",
     }).then(() => {
-      window.location.href = "/";
+      window.location.href = "/products";
     });
   } else if (validMembers.includes(result.value.toLowerCase())) {
     Swal.fire({
@@ -72,7 +72,7 @@ Swal.fire({
       icon: "error",
       confirmButtonText: "Ok",
     }).then(() => {
-      window.location.href = `/?lastAttemptedUsername=${result.value}`;
+      window.location.href = `/products?lastAttemptedUsername=${result.value}`;
       // window.location.href = "/";
     });
   }

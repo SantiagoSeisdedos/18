@@ -24,7 +24,7 @@ Swal.fire({
       icon: "error",
       confirmButtonText: "Ok",
     }).then(() => {
-      window.location.href = "/";
+      window.location.href = "/products";
     });
   } else {
     Swal.fire({

@@ -1,0 +1,17 @@
+<h1>Listado de Productos</h1>
+<p id="validMemberMessage"></p>
+
+{{#if name}}
+  <h3>Bienvenido {{name}}!</h3>
+  <div id="userWelcome">
+    <p>Rol: {{rol}}</p>
+    <p>Correo electrónico: {{email}}</p>
+  </div>
+
+{{/if}}
+
+<ul id="productList"></ul>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/products.client.js"></script>

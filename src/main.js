@@ -8,18 +8,22 @@ import {
   injectSocketServer,
   onConnection,
 } from "./sockets/socket.controller.js";
-import { apiRouter } from "./routes/api.router.js";
-import { webRouter } from "./routes/web.router.js";
+import { sessions } from "./middlewares/sessions.js";
+import { apiRouter } from "./routes/api/api.router.js";
+import { webRouter } from "./routes/web/web.router.js";
 
 const app = express();
+
+const server = app.listen(8080, async () => {
+  const DB_STATUS = await mongoose.connect(MONGODB_URL);
+  if (DB_STATUS)
+    console.log(`Base de datos en linea! Conectado: ${BASE_URL}`);
+});
+
 app.engine("handlebars", handlebars.engine());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-
-const server = app.listen(8080, () => {
-  const DB_STATUS = mongoose.connect(MONGODB_URL);
-  if (DB_STATUS) console.log(`Base de datos en linea! Conectado: ${BASE_URL}/products`);
-});
+app.use(sessions);
 
 // Socket.io
 const webSocketServer = new Server(server);
@@ -37,4 +41,4 @@ app.use(express.static("static"));
 app.use("/", webRouter);
 app.use("/api", apiRouter);
 
-// 03:12:00
+// 04:10:00

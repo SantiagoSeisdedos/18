@@ -53,3 +53,12 @@ body {
 .pagination a:hover {
   background-color: #0056b3;
 }
+
+#userWelcome {
+  background-color: #606060;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 8px;
+  border-radius: 8px;
+  justify-content: center;
+}

@@ -1,4 +1,4 @@
-const productList = document.querySelector("ul");
+const productList = document.getElementById("productList");
 const validMemberMessage = document.getElementById("validMemberMessage");
 const initialize = async () => {
   const urlParams = new URLSearchParams(window.location.search);
