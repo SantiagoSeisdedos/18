@@ -1,35 +1,26 @@
 import { Router } from "express";
-import { userModel } from "../../dao/models/user.model.js";
-import { ADMIN_EMAIL } from "../../config.js";
+import passport from "passport";
+import { isAuthenticated } from "../../middlewares/authorization.js";
 
 export const sessionsRouter = Router();
 
 sessionsRouter.post("/", async (req, res) => {
-  try {
-    const user = await userModel.findOne(req.body).lean();
-    if (!user) {
-      return res.status(401).json({ message: "Invalid credentials" });
-    }
-    req.session["user"] = {
-      name: user.name,
-      lastName: user.lastName,
-      email: user.email,
+  passport.authenticate("localLogin", {
+    failWithError: true,
+  }),
+    async (req, res, next) => {
+      res.status(201).json({ status: "success", message: "Login successful!" });
+    },
+    (err, req, res, next) => {
+      res.status(401).json({
+        status: "error",
+        message: err.message || "Login failed: Invalid credentials",
+      });
     };
+});
 
-    if (ADMIN_EMAIL.includes(user.email)) {
-      req.session["user"].rol = "admin";
-    } else {
-      req.session["user"].rol = "user";
-    }
-
-    return res.status(201).json({
-      payload: req.session["user"],
-      message: "Login successful!",
-    });
-  } catch (error) {
-    console.log(error);
-    return res.status(500).json({ message: "Error loading /login" });
-  }
+sessionsRouter.get("/current", isAuthenticated, (req, res) => {
+  res.json(req.user);
 });
 
 sessionsRouter.delete("/current", (req, res) => {
@@ -41,3 +32,32 @@ sessionsRouter.delete("/current", (req, res) => {
     return res.status(500).json({ message: "Error loading /logout" });
   }
 });
+
+// Old code
+// sessionsRouter.post("/", async (req, res) => {
+//   try {
+//     const user = await userModel.findOne(req.body).lean();
+//     if (!user) {
+//       return res.status(401).json({ message: "Invalid credentials" });
+//     }
+//     req.session["user"] = {
+//       name: user.name,
+//       lastName: user.lastName,
+//       email: user.email,
+//     };
+
+//     if (ADMIN_EMAIL.includes(user.email)) {
+//       req.session["user"].rol = "admin";
+//     } else {
+//       req.session["user"].rol = "user";
+//     }
+
+//     return res.status(201).json({
+//       payload: req.session["user"],
+//       message: "Login successful!",
+//     });
+//   } catch (error) {
+//     console.log(error);
+//     return res.status(500).json({ message: "Error loading /login" });
+//   }
+// });
