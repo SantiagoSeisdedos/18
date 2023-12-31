@@ -1,6 +1,7 @@
 import { Router } from "express";
 import { userModel } from "../../dao/models/user.model.js";
 import { hashPassword } from "../../utils/crypto.js";
+import { isAuthenticated } from "../../middlewares/authorization.js";
 
 export const usersRouter = Router();
 
@@ -50,4 +51,11 @@ usersRouter.put("/", async (req, res) => {
   } catch (error) {
     res.status(400).json({ message: error.message || error, status: "error" });
   }
+});
+
+usersRouter.get("/current", isAuthenticated, async (req, res) => {
+  const user = await userModel
+    .findOne({ email: req["user"].email }, { password: 0 })
+    .lean();
+  res.json({ status: "success", payload: user });
 });

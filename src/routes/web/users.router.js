@@ -11,7 +11,7 @@ usersRouter.get("/register", (req, res) => {
   }
 });
 
-usersRouter.get("resetPassword", (req, res) => {
+usersRouter.get("/resetPassword", (req, res) => {
   try {
     return res.render("resetPassword.handlebars", {
       pageTitle: "Reset Password",
@@ -22,11 +22,11 @@ usersRouter.get("resetPassword", (req, res) => {
   }
 });
 
-usersRouter.get("/profile", isAuthenticated, (req, res) => {
+usersRouter.get("/profile", (req, res) => {
   try {
     return res.render("profile.handlebars", {
       pageTitle: "Profile",
-      ...req.session["user"],
+      user: req.user,
     });
   } catch (error) {
     return res.status(500).json({ message: "Error loading /profile" });

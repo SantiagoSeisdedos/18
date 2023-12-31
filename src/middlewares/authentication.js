@@ -8,12 +8,12 @@ passport.use(
     {
       usernameField: "email",
     },
-    async function verifyCallback(username, password, done) {
+    async function verificationCallback(username, password, done) {
       try {
-        const user = await userModel.login(username, password);
-        return done(null, user);
+        const userData = await userModel.login(username, password);
+        done(null, userData);
       } catch (error) {
-        return done(error);
+        done(error);
       }
     }
   )
@@ -22,7 +22,6 @@ passport.use(
 passport.serializeUser((user, next) => {
   next(null, user);
 });
-
 passport.deserializeUser((user, next) => {
   next(null, user);
 });

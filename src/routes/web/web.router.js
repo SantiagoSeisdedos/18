@@ -19,14 +19,13 @@ webRouter.get("/", (req, res) => {
   }
 });
 
-webRouter.get("/products", isAuthenticated, (req, res) => {
+webRouter.get("/products", (req, res) => {
   try {
     return res.render("products.handlebars", {
       pageTitle: `Products`,
-      ...req.session["user"],
+      user: req.user,
     });
   } catch (error) {
-    console.log(error);
     return res.status(500).json({ message: "Error loading /products" });
   }
 });

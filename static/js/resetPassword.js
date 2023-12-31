@@ -9,7 +9,7 @@ resetPasswordForm?.addEventListener("submit", async (event) => {
       "Content-Type": "application/x-www-form-urlencoded",
     },
     // @ts-ignore
-    body: new URLSearchParams(new FormData(formResetPwd)),
+    body: new URLSearchParams(new FormData(resetPasswordForm)),
   });
 
   if (response.status === 200) {
