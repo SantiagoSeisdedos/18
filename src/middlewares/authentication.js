@@ -35,7 +35,7 @@ passport.use(
       callbackURL: GITHUB_CALLBACK_URL,
     },
     async (_, __, profile, done) => {
-      let user = await userModel.findOne({ email: profile.email });
+      let user = await userModel.findOne({ email: profile.username });
       if (!user) {
         user = await userModel.create({
           name: profile.displayName,

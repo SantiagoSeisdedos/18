@@ -30,10 +30,12 @@ usersRouter.post("/", async (req, res) => {
 
 usersRouter.put("/", async (req, res) => {
   try {
-    req.body.password = hashPassword(req.body.password);
-    const updatedUser = await userModel.updateOne(
+    if (req.body.password) {
+      req.body.password = hashPassword(req.body.password);
+    }
+    const updatedUser = await userModel.findOneAndUpdate(
       { email: req.body.email },
-      { $set: { password: req.body.password } },
+      { $set: req.body },
       { new: true }
     );
 

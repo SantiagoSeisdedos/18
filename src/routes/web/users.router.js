@@ -22,6 +22,17 @@ usersRouter.get("/resetPassword", (req, res) => {
   }
 });
 
+usersRouter.get("/edit", (req, res) => {
+  try {
+    return res.render("edit.handlebars", {
+      pageTitle: "Edit Profiles",
+    });
+  } catch (error) {
+    console.log(error);
+    return res.status(500).json({ message: "Error loading /resetPassword" });
+  }
+});
+
 usersRouter.get("/profile", (req, res) => {
   try {
     return res.render("profile.handlebars", {
