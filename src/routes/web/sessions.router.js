@@ -1,4 +1,5 @@
 import { Router } from "express";
+import passport from "passport";
 
 export const sessionsRouter = Router();
 
@@ -10,3 +11,13 @@ sessionsRouter.get("/login", (req, res) => {
     return res.status(500).json({ message: "Error loading /login" });
   }
 });
+
+sessionsRouter.get("/githubLogin", passport.authenticate("githubLogin"));
+
+sessionsRouter.get(
+  "/githubcallback",
+  passport.authenticate("githubLogin", {
+    successRedirect: "/profile",
+    failureRedirect: "/login",
+  })
+);

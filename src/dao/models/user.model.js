@@ -8,9 +8,9 @@ const schema = new mongoose.Schema(
   {
     _id: { type: String, default: randomUUID },
     email: { type: String, unique: true, required: true },
-    password: { type: String, required: true },
+    password: { type: String, default: "(no aplica)" },
     name: { type: String, required: true },
-    lastName: { type: String, required: true },
+    lastName: { type: String, default: "(sin especificar)" },
   },
   {
     strict: "throw",
