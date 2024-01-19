@@ -1,6 +1,8 @@
+import "dotenv/config";
 import session from "express-session";
 import connectMongo from "connect-mongo";
-import { MONGODB_URL, SESSION_SECRET } from "../config.js";
+
+const { MONGODB_URL, SESSION_SECRET } = process.env;
 
 const store = connectMongo.create({
   mongoUrl: MONGODB_URL,

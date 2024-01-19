@@ -10,6 +10,8 @@ formLogin?.addEventListener("submit", async (event) => {
       body: new URLSearchParams(new FormData(formLogin)),
     });
 
+    console.log("response =>", response);
+
     if (response.status === 201) {
       const sesion = await response.json();
       alert(JSON.stringify(sesion));
@@ -19,6 +21,7 @@ formLogin?.addEventListener("submit", async (event) => {
       throw new Error(error.message || error);
     }
   } catch (error) {
+    console.log("CATCH error", error);
     alert(error);
   }
 });

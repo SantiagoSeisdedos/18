@@ -2,8 +2,8 @@ import express from "express";
 import mongoose from "mongoose";
 import handlebars from "express-handlebars";
 import { Server } from "socket.io";
+import "dotenv/config";
 
-import { BASE_URL, MONGODB_URL } from "./config.js";
 import {
   injectSocketServer,
   onConnection,
@@ -11,7 +11,10 @@ import {
 import { sessions } from "./middlewares/sessions.js";
 import { apiRouter } from "./routes/api/api.router.js";
 import { webRouter } from "./routes/web/web.router.js";
-import { passportInitialize, passportSession } from "./middlewares/authentication.js";
+import { authentication } from "./middlewares/authentication.js";
+import { cookies } from "./middlewares/cookies.js";
+
+const { MONGODB_URL, BASE_URL } = process.env;
 
 const app = express();
 
@@ -20,11 +23,11 @@ const server = app.listen(8080, async () => {
   if (DB_STATUS) console.log(`Base de datos en linea! Conectado: ${BASE_URL}`);
 });
 
+app.use(cookies);
 app.engine("handlebars", handlebars.engine());
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
 app.use(sessions);
-app.use(passportInitialize, passportSession);
+app.use(authentication);
+// app.use(passportInitialize, passportSession);
 
 // Socket.io
 const webSocketServer = new Server(server);
@@ -42,4 +45,3 @@ app.use(express.static("static"));
 app.use("/", webRouter);
 app.use("/api", apiRouter);
 
-// 03:52:00 (clase 11)

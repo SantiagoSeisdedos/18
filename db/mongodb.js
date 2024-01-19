@@ -1,5 +1,7 @@
 import mongoose from "mongoose";
-import { MONGODB_URL } from "../src/config.js";
+import "dotenv/config";
+
+const MONGODB_URL = process.env.MONGODB_URL;
 
 await mongoose.connect(MONGODB_URL);
 

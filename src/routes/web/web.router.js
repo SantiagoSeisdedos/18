@@ -1,12 +1,15 @@
+import "dotenv/config";
 import { Router } from "express";
+
+import { usersRouter } from "./users.router.js";
+import { sessionsRouter } from "./sessions.router.js";
 import { upload } from "../../middlewares/saveImage.js";
+import { isAuthenticated } from "../../middlewares/authorization.js";
 
 import { productModel } from "../../dao/models/product.model.js";
 import { cartModel } from "../../dao/models/cart.model.js";
-import { BASE_URL } from "../../config.js";
-import { isAuthenticated } from "../../middlewares/authorization.js";
-import { usersRouter } from "./users.router.js";
-import { sessionsRouter } from "./sessions.router.js";
+
+const BASE_URL = process.env.BASE_URL;
 
 export const webRouter = Router();
 

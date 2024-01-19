@@ -1,16 +1,29 @@
 import mongoose from "mongoose";
 import { randomUUID } from "node:crypto";
-import { areHashesEqual } from "../../utils/crypto.js";
+import { areHashesEqual, hashPassword } from "../../utils/crypto.js";
+import { errorStatusMap } from "../../utils/errorCodes.js";
 
+const { ADMIN_EMAIL, DEFAULT_USER_AVATAR_PATH } = process.env;
 const collection = "users";
 
 const schema = new mongoose.Schema(
   {
     _id: { type: String, default: randomUUID },
-    email: { type: String, unique: true, required: true },
-    password: { type: String, default: "(no aplica)" },
     name: { type: String, required: true },
     lastName: { type: String, default: "(sin especificar)" },
+    email: { type: String, unique: true, required: true },
+    age: { type: Number },
+    password: { type: String, default: "(no aplica)" },
+    rol: { type: String, enum: ["admin", "user"], default: "user" },
+    profilePicture: { type: String, default: DEFAULT_USER_AVATAR_PATH },
+    cart: {
+      type: [
+        {
+          _id: { type: String, ref: "cart", default: randomUUID },
+        },
+      ],
+      default: "",
+    },
   },
   {
     strict: "throw",
@@ -48,6 +61,35 @@ const schema = new mongoose.Schema(
           };
         }
         return userData;
+      },
+      register: async function (userData) {
+        try {
+          if (!userData.email || !userData.password)
+            throw new Error("INCORRECT_DATA: Missing required fields");
+
+          userData.password = hashPassword(userData.password);
+          if (userData.email === ADMIN_EMAIL) userData.rol = "admin";
+          const user = await this.create(userData);
+          return user.toObject();
+        } catch (error) {
+          const typedError = new Error(error.message);
+          typedError.code =
+            error.code === 11000
+              ? errorStatusMap.DUPLICATED_KEY
+              : errorStatusMap.UNEXPECTED_ERROR;
+          throw typedError;
+        }
+      },
+      authentication: async function ({ username, password }) {
+        try {
+          const user = await this.findOne({ username });
+          if (!user || !areHashesEqual(password, user.password))
+            throw new Error("UNAUTHORIZED");
+          return user.toObject();
+        } catch (error) {
+          const typedError = new Error(error.message);
+          typedError.code = errorStatusMap.UNAUTHORIZED;
+        }
       },
     },
   }
