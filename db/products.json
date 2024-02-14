@@ -1,86 +1,178 @@
 [
   {
-    "title": "Sprite!",
-    "description": "Gaseosa Sprite Original 354ml.",
-    "price": "$ 393",
+    "_id": "288b956a-0630-43fe-a3b7-e07c82cb8b8c",
+    "title": "7up",
+    "description": "Gaseosa 7up Original 354ml.",
+    "price": "393",
     "thumbnail": [
-      "https://http2.mlstatic.com/D_NQ_NP_2X_913242-MLA72693322118_112023-F.webp"
+      "1702872959732-7up.webp"
     ],
-    "code": "SP-O",
-    "stock": 100,
-    "status": false,
-    "category": "10% off"
+    "code": "7up001",
+    "status": true,
+    "stock": 145,
+    "category": "bebidas",
+    "timestamp": "2023-12-18T04:15:59.763Z"
   },
   {
-    "title": "Coca-Cola",
+    "_id": "04fffee5-7cfc-485c-bd44-897a9ca01e90",
+    "title": "Pepsi",
+    "description": "Pepsi sabor original",
+    "price": "750",
+    "thumbnail": [
+      "1702874019752-Pepsi.webp"
+    ],
+    "code": "PSO-001",
+    "status": true,
+    "stock": 2100,
+    "category": "bebidas",
+    "timestamp": "2023-12-18T04:33:39.773Z"
+  },
+  {
+    "_id": "f791cff8-0c2a-4134-9743-56b204adff27",
+    "title": "Coca",
     "description": "Gaseosa Coca-cola Sabor Original 354 Ml",
-    "price": "$ 850",
-    "thumbnail": "https://http2.mlstatic.com/D_NQ_NP_2X_877850-MLA49961094143_052022-F.webp",
-    "code": "CC1",
-    "stock": 100
+    "price": "565",
+    "thumbnail": [
+      "1702873151784-Coca.webp"
+    ],
+    "code": "CC01",
+    "status": true,
+    "stock": 1560,
+    "category": "bebidas",
+    "timestamp": "2023-12-18T04:19:11.808Z"
   },
   {
-    "title": "PEPSI",
-    "description": "Gaseosa Pepsi Lata 354 Cc",
-    "price": "$ 224",
-    "thumbnail": "https://http2.mlstatic.com/D_NQ_NP_2X_910631-MLA49966614930_052022-F.webp",
-    "code": "P1",
-    "stock": 150
+    "_id": "c853e538-fdeb-42dc-ad25-25da45d6012c",
+    "title": "Sprite",
+    "description": "Sprite sabor original",
+    "price": "805",
+    "thumbnail": [
+      "1702874305930-Sprite.webp"
+    ],
+    "code": "SO0",
+    "status": true,
+    "stock": 1230,
+    "category": "bebidas",
+    "timestamp": "2023-12-18T04:38:25.953Z"
   },
   {
-    "title": "Fanta Maracuya",
-    "description": "Fanta Maracuya Original De Brasil 350ml",
-    "price": "$ 2.199",
-    "thumbnail": "https://http2.mlstatic.com/D_NQ_NP_2X_820788-MLU70622658776_072023-F.webp",
-    "code": "FM1",
-    "stock": 15
+    "_id": "80ad08e6-a8de-4893-9f43-ab1622cfa1b8",
+    "title": "Coca Light",
+    "description": "Gaseosa Coca-cola light 354 Ml",
+    "price": "1400",
+    "thumbnail": [
+      "1702873247049-CocaLight.webp"
+    ],
+    "code": "CC-L1",
+    "status": true,
+    "stock": 870,
+    "category": "bebidas",
+    "timestamp": "2023-12-18T04:20:47.055Z"
   },
   {
-    "title": "Fanta",
-    "description": "Fanta Naranja Lata Gaseosa Original",
-    "price": "$ 989",
-    "thumbnail": "https://http2.mlstatic.com/D_NQ_NP_2X_820788-MLU70622658776_072023-F.webp",
-    "code": "FO1",
-    "stock": 100
+    "_id": "2264b041-642b-4175-a22e-369d1817e4b3",
+    "title": "Fanta Grape",
+    "description": "Fanta limited edition",
+    "price": "2100",
+    "thumbnail": [
+      "1702873450337-FantaGrape.webp"
+    ],
+    "code": "F00G12",
+    "status": true,
+    "stock": 50,
+    "category": "limited",
+    "timestamp": "2023-12-18T04:24:10.343Z"
   },
   {
-    "title": "Fanta Uva",
-    "description": "Fanta Uva Original De Brasil 350ml",
-    "price": "$ 2.051",
-    "thumbnail": "https://http2.mlstatic.com/D_NQ_NP_2X_809472-MLA50099375671_052022-F.webp",
-    "code": "FU1",
-    "stock": 25
-  },
-  {
+    "_id": "c6f70a0e-2dd6-4b56-929e-52a118e609bc",
     "title": "Fanta Misterio",
-    "description": "Gaseosa Fanta Misterio ( E. Limitada) 350ml - Origen Brasil",
-    "price": "$ 2.392",
-    "thumbnail": "https://http2.mlstatic.com/D_NQ_NP_2X_832144-MLA71681000696_092023-F.webp",
-    "code": "FMEL1",
-    "stock": 75
+    "description": "Fanta limited edition",
+    "price": "2300",
+    "thumbnail": [
+      "1702873828271-FantaMisterio.webp"
+    ],
+    "code": "FM002",
+    "status": true,
+    "stock": 120,
+    "category": "limited",
+    "timestamp": "2023-12-18T04:30:28.295Z"
   },
   {
-    "title": "Sunkist SPARKLING",
-    "description": "Gaseosa Sabor Pomelo Sunkist 355 Ml.",
-    "price": "$ 1.612",
-    "thumbnail": "https://http2.mlstatic.com/D_NQ_NP_2X_975939-MLA49880068133_052022-F.webp",
-    "code": "SSPAR1",
-    "stock": 35
+    "_id": "fd3db18e-1f9e-40e7-aff5-740b8a4cf87f",
+    "title": "Fanta Uva",
+    "description": "Fanta Uva limited edition",
+    "price": "1900",
+    "thumbnail": [
+      "1702873909991-FantaUva.webp"
+    ],
+    "code": "FU-LE001",
+    "status": true,
+    "stock": 135,
+    "category": "limited",
+    "timestamp": "2023-12-18T04:31:49.997Z"
   },
   {
-    "title": "Sunny Ananá",
-    "description": "Gaseosa Sunny Sabor Ananá 250 Ml - Origen Corea",
-    "price": "$ 1.619",
-    "thumbnail": "https://http2.mlstatic.com/D_NQ_NP_2X_656341-MLA50035951510_052022-F.webp",
-    "code": "SA1-CO",
-    "stock": 354
+    "_id": "0d0489dd-d80c-4364-9991-1f3b1e4586ef",
+    "title": "Fanta Maracuja",
+    "description": "Fanta limited edition",
+    "price": "1700",
+    "thumbnail": [
+      "1702873694278-FantaMaracuja.webp"
+    ],
+    "code": "FMLE-001",
+    "status": true,
+    "stock": 80,
+    "category": "limited",
+    "timestamp": "2023-12-18T04:28:14.302Z"
   },
   {
-    "title": "Hachi Sandia",
-    "description": "Gaseosa hachi Sabor Sandia 330 Ml - Origen Corea",
-    "price": "$ 2.829",
-    "thumbnail": "https://http2.mlstatic.com/D_NQ_NP_2X_780009-MLA48833034770_012022-F.webp",
-    "code": "HS1-CO",
-    "stock": 354
+    "_id": "dd5fea63-5681-403f-ba48-cfe4acaf4083",
+    "title": "Paso De Los Toros",
+    "description": "Gaseosa Paso De Los Toros Sin Azúcares 1,5l Pomelo",
+    "price": "805",
+    "thumbnail": [
+      "1702874462611-PASOdelostoros.png"
+    ],
+    "code": "PDLT-A0",
+    "status": true,
+    "stock": 100,
+    "category": "bebidas",
+    "timestamp": "2023-12-18T04:41:02.634Z"
+  },
+  {
+    "_id": "91a82c86-de6b-4ba2-8813-a1283f571570",
+    "title": "Paso De Los Totoros",
+    "price": 805,
+    "description": "Meme",
+    "thumbnail": "https://http2.mlstatic.com/D_Q_NP_929011-MLA45667458747_042021-R.webp",
+    "code": "MEME-TOTORO",
+    "status": false,
+    "stock": 45,
+    "category": "5% off",
+    "timestamp": 1707556717644
+  },
+  {
+    "_id": "21666b2c-de2e-4252-8af0-7b14d8799898",
+    "title": "Paso De Los Totoros",
+    "price": 805,
+    "description": "Meme",
+    "thumbnail": "https://http2.mlstatic.com/D_Q_NP_929011-MLA45667458747_042021-R.webp",
+    "code": "MEME-TOTORO",
+    "status": false,
+    "stock": 45,
+    "category": "5% off",
+    "timestamp": 1707556760256
+  },
+  {
+    "_id": "5d9b3f16-51ab-4f3f-94bc-e8886d6df293",
+    "title": "Paso De Los Totoros",
+    "price": 805,
+    "description": "Meme",
+    "thumbnail": "https://http2.mlstatic.com/D_Q_NP_929011-MLA45667458747_042021-R.webp",
+    "code": "MEME-TOTORO",
+    "status": false,
+    "stock": 45,
+    "category": "5% off",
+    "timestamp": 1707556769945
   }
 ]

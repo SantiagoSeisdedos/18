@@ -1,9 +1,11 @@
 import { hashSync, compareSync, genSaltSync } from "bcrypt";
 import jwt from "jsonwebtoken";
 import { errorStatusMap } from "./errorCodes.js";
+import { JWT_SECRET } from "../config/config.js";
 
-const { JWT_SECRET } = process.env;
+
 export function hashPassword(phrase) {
+  console.log("inside hashPassword phrase", phrase)
   if (!phrase) throw new Error("Can't hash empty phrase: ", phrase);
   return hashSync(phrase, genSaltSync(10));
 }

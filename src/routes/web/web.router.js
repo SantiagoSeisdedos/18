@@ -6,10 +6,8 @@ import { sessionsRouter } from "./sessions.router.js";
 import { upload } from "../../middlewares/saveImage.js";
 import { isAuthenticated } from "../../middlewares/authorization.js";
 
-import { productModel } from "../../dao/models/product.model.js";
-import { cartModel } from "../../dao/models/cart.model.js";
-
-const BASE_URL = process.env.BASE_URL;
+import axios from "axios";
+import { BASE_URL } from "../../config/config.js";
 
 export const webRouter = Router();
 
@@ -38,7 +36,7 @@ webRouter.get("/products/:id", async (req, res) => {
     const productId = req.params.id;
     if (!productId) throw new Error("Product ID is required");
 
-    const product = await productModel.findById(productId).lean();
+    const product = await axios.get(`${BASE_URL}/api/products/${productId}`);
 
     if (!product) {
       return res.status(404).json({ message: "Product not found" });

@@ -2,15 +2,15 @@ import passport from "passport";
 import { Strategy as LocalStrategy } from "passport-local";
 import { Strategy as GithubStrategy } from "passport-github2";
 import { Strategy as JwtStrategy } from "passport-jwt";
-import { userModel } from "../dao/models/user.model.js";
 import _ from "mongoose-paginate-v2";
 
-const {
+import {
   GITHUB_CALLBACK_URL,
   GITHUB_CLIENT_ID,
   GITHUB_CLIENT_SECRET,
   JWT_SECRET,
-} = process.env;
+} from "../config/config.js";
+
 // Passport local strategy
 passport.use(
   "localLogin",

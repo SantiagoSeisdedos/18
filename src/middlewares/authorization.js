@@ -12,7 +12,10 @@ export function isAuthenticated(req, res, next) {
 
 export function isAuthorized(roles) {
   return async function (req, res, next) {
-    if (roles.includes(req.user.rol)) {
+    console.log("EEE E E EisAuthorized =>", req.user, "roles =>", roles);
+    const { rol } = req.user;
+    if (roles.includes(rol)) {
+      console.log("isAuthorized =>", true, "roles =>", roles);
       return next();
     }
     const typedError = new Error("You are not authorized");

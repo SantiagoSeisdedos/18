@@ -1,183 +1,48 @@
 import { Router } from "express";
-import { productModel } from "../../dao/models/product.model.js";
+import {
+  deleteProductController,
+  getProductController,
+  getProductsController,
+  postProductController,
+  putProductController,
+} from "../../controllers/products.controller.js";
+import {
+  validateProductData,
+  validateId,
+  validateUpdates,
+} from "../../middlewares/validations.js";
+import { isAuthorized } from "../../middlewares/authorization.js";
+import passport from "passport";
 
 export const productsRouter = Router();
 
 // GET
-productsRouter.get("/", async (req, res) => {
-  try {
-    let { limit = 10, page = 1, sort, query } = req.query;
-
-    limit = parseInt(limit);
-    page = parseInt(page);
-
-    const options = {
-      page,
-      limit,
-      lean: true,
-      sort:
-        sort === "desc" ? { price: -1 } : sort === "asc" ? { price: 1 } : null,
-    };
-
-    // Configurar el filtro basado en la query
-    const filter = query ? { category: query } : {};
-
-    // Ejecutar la consulta paginada
-    const products = await productModel.paginate(filter, options);
-
-    // Construir la respuesta
-    const response = {
-      status: "success",
-      hasDocuments: products.docs.length > 0,
-      ...products,
-      // payload: products.docs,
-      // totalPages: products.totalPages,
-      // prevPage: products.hasPrevPage ? page - 1 : null,
-      // nextPage: products.hasNextPage ? page + 1 : null,
-      // page,
-      // hasPrevPage: products.hasPrevPage,
-      // hasNextPage: products.hasNextPage,
-      // prevLink: products.hasPrevPage
-      //   ? `/api/products?limit=${limit}&page=${page - 1}`
-      //   : null,
-      // nextLink: products.hasNextPage
-      //   ? `/api/products?limit=${limit}&page=${page + 1}`
-      //   : null,
-    };
-
-    res.status(200).json(response);
-  } catch (error) {
-    console.log("Error al obtener los productos con mongoose: ", error);
-    res.status(500).json({ error: error.message });
-  }
-});
-
-// GET BY ID
-productsRouter.get("/:id", async (req, res) => {
-  try {
-    if (!req.params.id) return res.status(400).json({ error: "Falta el ID" });
-
-    const product = await productModel.findById(req.params.id).lean();
-    if (!product) {
-      return res.status(404).json({ error: "Producto no encontrado" });
-    }
-
-    return res.status(200).json(product);
-  } catch (error) {
-    return res.status(500).json({ error: error.message });
-  }
-});
+productsRouter.get("/", getProductsController);
+productsRouter.get("/:id", validateId, getProductController);
 
 // POST
-productsRouter.post("/", async (req, res) => {
-  const {
-    title,
-    description,
-    price,
-    thumbnail,
-    code,
-    status,
-    stock,
-    category,
-  } = req.body;
-  try {
-    if (
-      !title ||
-      !description ||
-      !price ||
-      !thumbnail ||
-      !code ||
-      !stock ||
-      !category
-    ) {
-      return res.status(400).json({ error: "Campos incompletos" });
-    }
-    const newProduct = await productModel.create({
-      title,
-      description,
-      price,
-      thumbnail,
-      code,
-      status,
-      stock,
-      category,
-    });
-    res.status(200).json({
-      message: "Producto creado con éxito",
-      data: newProduct,
-    });
-  } catch (error) {
-    console.log("Error al guardar el producto con mongoose: ", error);
-    res.status(500).json({ error: error.message || error });
-  }
-});
+productsRouter.post(
+  "/",
+  passport.authenticate("jwt", { failWithError: true, session: false }),
+  isAuthorized(["admin"]),
+  validateProductData,
+  postProductController
+);
 
 // PUT
-productsRouter.put("/:id", async (req, res) => {
-  console.log("req.body: ", req.body);
-  const {
-    title,
-    description,
-    price,
-    thumbnail,
-    code,
-    status,
-    stock,
-    category,
-  } = req.body;
-  try {
-    if (
-      !title ||
-      !description ||
-      !price ||
-      !thumbnail ||
-      !code ||
-      !stock ||
-      !category
-    ) {
-      return res.status(400).json({ error: "Campos incompletos" });
-    }
-    const product = await productModel.findByIdAndUpdate(
-      req.params.id,
-      {
-        title,
-        description,
-        price,
-        thumbnail,
-        code,
-        status,
-        stock,
-        category,
-      },
-      { new: true }
-    );
-    if (!product)
-      return res.status(404).json({ error: "Producto no encontrado" });
-    res.status(200).json({
-      message: "Producto actualizado con éxito",
-      data: product,
-    });
-  } catch (error) {
-    console.log("Error al actualizar el producto con mongoose: ", error);
-    res.status(500).json({ error: error.message || error });
-  }
-});
+productsRouter.put(
+  "/:id",
+  passport.authenticate("jwt", { failWithError: true, session: false }),
+  isAuthorized(["admin"]),
+  validateUpdates,
+  putProductController
+);
 
 // DELETE
-productsRouter.delete("/:id", async (req, res) => {
-  try {
-    if (!req.params.id) return res.status(400).json({ error: "Falta el ID" });
-
-    const product = await productModel.findByIdAndDelete(req.params.id);
-    if (!product)
-      return res.status(404).json({ error: "Producto no encontrado" });
-
-    res.status(200).json({
-      message: "Producto eliminado con éxito",
-      data: product,
-    });
-  } catch (error) {
-    console.log("Error al eliminar el producto con mongoose: ", error);
-    res.status(500).json({ error: error.message });
-  }
-});
+productsRouter.delete(
+  "/:id",
+  passport.authenticate("jwt", { failWithError: true, session: false }),
+  isAuthorized(["admin"]),
+  validateId,
+  deleteProductController
+);

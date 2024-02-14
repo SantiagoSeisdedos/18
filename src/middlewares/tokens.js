@@ -17,6 +17,9 @@ export async function tokenizeUserInCookie(req, res, next) {
 }
 
 export function deleteTokenFromCookie(req, res, next) {
-  res.clearCookie("authorization", cookieOptions);
-  next();
+  try {
+    return res.clearCookie("authorization", cookieOptions);
+  } catch (error) {
+    next(error);
+  }
 }

@@ -1,132 +1,97 @@
-import productManager from "../services/ProductManager.js";
-import { validateLimit, validateProductId } from "../utils/validations.js";
+import { productsService } from "../services/products.service.js";
+import { errorStatusMap } from "../utils/errorCodes.js";
 
-// working
-export async function getProducts(req, res) {
+export async function getProductsController(req, res, next) {
   try {
-    const limit = parseInt(req.query.limit);
-    if (limit) validateLimit(limit);
+    const { limit, page, sort, query } = req.query;
 
-    const products = await productManager.getProducts(limit);
+    const products = await productsService.readMany({
+      limit,
+      page,
+      sort,
+      query,
+    });
 
-    if (products.length === 0) {
-      res.status(404).json({ error: "No se encontraron productos." });
-    } else {
-      res.json(products);
+    if (!products.length) {
+      const error = new Error("No se encontraron productos.");
+      error.code = errorStatusMap.NOT_FOUND;
+      throw error;
     }
+
+    res.json(products);
   } catch (error) {
-    res.status(400).json({ error: error.message });
+    next(error);
   }
 }
 
-// Working
-export async function getProductById(req, res) {
+export async function getProductController(req, res, next) {
   try {
-    if (!req.params.id)
-      return res.status(400).json({ error: "Falta el parámetro 'id'" });
-
-    const id = parseInt(req.params.id);
-    validateProductId(id);
-
-    const product = await productManager.getProductById(id);
+    const { id } = req.params;
+    const product = await productsService.readOne(id);
     if (!product) {
-      res
-        .status(404)
-        .json({ error: `No se encontró ningún producto con el ID ${id}.` });
-    } else {
-      res.json(product);
+      const error = new Error(`No se encontró ningún producto con el ID ${id}`);
+      error.code = errorStatusMap.NOT_FOUND;
+      throw error;
     }
+    res.json(product);
   } catch (error) {
-    res.status(400).json({ error: error.message });
+    next(error);
   }
 }
 
-// Working
-export async function addProduct(req, res) {
+export async function postProductController(req, res, next) {
   try {
-    const {
-      title,
-      description,
-      price,
-      thumbnail,
-      code,
-      status,
-      stock,
-      category,
-    } = req.body;
+    const product = await productsService.createOne(req.body);
 
-    const product = await productManager.addProduct(
-      title,
-      description,
-      price,
-      thumbnail,
-      code,
-      status,
-      stock,
-      category
-    );
+    if (!product) {
+      const error = new Error("No se pudo crear el producto");
+      error.code = errorStatusMap.UNEXPECTED_ERROR;
+      throw error;
+    }
+
+    res.status(201).json(product);
+  } catch (error) {
+    next(error);
+  }
+}
+
+export async function putProductController(req, res, next) {
+  try {
+    const { id } = req.params;
+    const product = await productsService.updateOne(id, req.body);
+
+    if (!product) {
+      const error = new Error(`No se encontró ningún producto con el ID ${id}`);
+      error.code = errorStatusMap.NOT_FOUND;
+      throw error;
+    }
     res.json({
       status: 201,
-      message: "Producto agregado correctamente.",
+      message: "Producto actualizado correctamente.",
       data: product,
     });
   } catch (error) {
-    res.status(400).json({ error: error });
+    next(error);
   }
 }
 
-// Working
-export async function updateProductById(req, res) {
+export async function deleteProductController(req, res, next) {
   try {
-    if (!req.params.id) {
-      res.status(400).json({ error: "Falta el parámetro 'id'" });
-      return;
-    }
-    const id = parseInt(req.params.id);
-    validateProductId(id);
+    const { id } = req.params;
+    const products = await productsService.deleteOne(id);
 
-    const updates = req.body;
-
-    if (Object.keys(updates).length === 0) {
-      throw new Error(
-        "Se requieren datos válidos para actualizar el producto."
-      );
+    if (!products) {
+      const error = new Error(`No se encontró ningún producto con el ID ${id}`);
+      error.code = errorStatusMap.NOT_FOUND;
+      throw error;
     }
 
-    const product = await productManager.updateProductById(id, updates);
-
-    if (!product) {
-      res
-        .status(404)
-        .json({ error: `No se encontró ningún producto con el ID ${id}.` });
-    } else {
-      res.json({
-        status: 201,
-        message: "Producto actualizado correctamente.",
-        data: product,
-      });
-    }
-  } catch (error) {
-    res.status(400).json({ error: error.message });
-  }
-}
-
-// Working
-export async function deleteProductById(req, res) {
-  try {
-    if (!req.params.id) {
-      res.status(400).json({ error: "Falta el parámetro 'id'" });
-      return;
-    }
-    const id = parseInt(req.params.id);
-    validateProductId(id);
-    const products = await productManager.deletrProductById(id);
     res.json({
       status: 201,
       message: "Producto eliminado correctamente.",
       data: products,
     });
   } catch (error) {
-    res.status(404).json({ error: error.message });
+    next(error);
   }
 }

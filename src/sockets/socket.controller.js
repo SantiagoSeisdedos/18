@@ -1,9 +1,8 @@
 import "dotenv/config";
 import axios from "axios";
+import { BASE_URL } from "../config/config.js";
 
-const BASE_URL = process.env.BASE_URL;
 export function onConnection(socketServer) {
-  // = = = Start of Product Functions = = =
   // Get products
   async function getProducts() {
     return await axios

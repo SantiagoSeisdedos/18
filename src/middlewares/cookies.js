@@ -1,5 +1,4 @@
 import cookieParser from "cookie-parser";
-
-const { COOKIE_SECRET } = process.env;
+import { COOKIE_SECRET } from "../config/config.js";
 
 export const cookies = cookieParser(COOKIE_SECRET);

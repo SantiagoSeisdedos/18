@@ -1,0 +1,22 @@
+[
+  {
+    "_id": "2648f9f7-c3f0-4279-be72-03da51d4aa3c",
+    "name": "santiago2",
+    "lastName": "seisdedos2",
+    "email": "2santiagoseisdedos@hotmail.com",
+    "password": "$2b$10$bAqrEM77PDS0xog.byIrGOaixJez1y/Ait2/MP06kqIKeY1qOi6U.",
+    "rol": "user",
+    "profilePicture": "./static/imgs/default-user-avatar.png",
+    "timestamp": 1707683907678
+  },
+  {
+    "_id": "622244fb-8c45-46d8-8b33-1d39f6154a50",
+    "name": "santiago",
+    "lastName": "seisdedos",
+    "email": "santiagoseisdedos@hotmail.com",
+    "password": "$2b$10$ggvhCceeap6tY6pXFmVqZu.rUtj3HUg9hIAciBOF4P9PXvH5blX4a",
+    "rol": "admin",
+    "profilePicture": "./static/imgs/default-user-avatar.png",
+    "timestamp": 1707684922824
+  }
+]

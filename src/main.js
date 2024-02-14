@@ -1,8 +1,7 @@
+import "dotenv/config";
 import express from "express";
-import mongoose from "mongoose";
 import handlebars from "express-handlebars";
 import { Server } from "socket.io";
-import "dotenv/config";
 
 import {
   injectSocketServer,
@@ -13,14 +12,14 @@ import { apiRouter } from "./routes/api/api.router.js";
 import { webRouter } from "./routes/web/web.router.js";
 import { authentication } from "./middlewares/authentication.js";
 import { cookies } from "./middlewares/cookies.js";
-
-const { MONGODB_URL, BASE_URL } = process.env;
+import { BASE_URL, PORT } from "./config/config.js";
+import { connect } from "../db/execution.config.js";
 
 const app = express();
 
-const server = app.listen(8080, async () => {
-  const DB_STATUS = await mongoose.connect(MONGODB_URL);
-  if (DB_STATUS) console.log(`Base de datos en linea! Conectado: ${BASE_URL}`);
+const server = app.listen(PORT, async () => {
+  await connect();
+  console.log(`Server on port ${PORT}: ${BASE_URL}`);
 });
 
 app.use(cookies);
@@ -44,4 +43,3 @@ app.use(express.static("static"));
 // routers
 app.use("/", webRouter);
 app.use("/api", apiRouter);
-

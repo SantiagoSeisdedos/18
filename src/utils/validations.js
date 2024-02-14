@@ -7,12 +7,6 @@ export function validateLimit(limit) {
   }
 }
 
-export function validateProductId(id) {
-  if (Number.isNaN(id) || id <= 0) {
-    throw new Error("El ID del producto debe ser un número entero positivo.");
-  }
-}
-
 export function validateArrayOfStrings(arr, fieldName) {
   if (!Array.isArray(arr) || !arr.every((item) => typeof item === "string")) {
     throw new Error(
