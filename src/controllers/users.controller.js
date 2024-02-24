@@ -17,7 +17,6 @@ export const UserController = {
     try {
       const user = await usersService.getCurrentUser(req.user.email);
       const { name, lastName, email, rol, profilePicture, cart } = user;
-      console.log("USER: ", user);
       return res.json({ name, lastName, email, rol, profilePicture, cart });
     } catch (error) {
       next(error);

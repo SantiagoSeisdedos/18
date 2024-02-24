@@ -5,7 +5,6 @@ import { JWT_SECRET } from "../config/config.js";
 
 
 export function hashPassword(phrase) {
-  console.log("inside hashPassword phrase", phrase)
   if (!phrase) throw new Error("Can't hash empty phrase: ", phrase);
   return hashSync(phrase, genSaltSync(10));
 }

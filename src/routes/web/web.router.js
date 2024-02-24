@@ -4,10 +4,10 @@ import { Router } from "express";
 import { usersRouter } from "./users.router.js";
 import { sessionsRouter } from "./sessions.router.js";
 import { upload } from "../../middlewares/saveImage.js";
-import { isAuthenticated } from "../../middlewares/authorization.js";
 
 import axios from "axios";
 import { BASE_URL } from "../../config/config.js";
+import { logger } from "../../utils/logger.js";
 
 export const webRouter = Router();
 
@@ -15,7 +15,7 @@ webRouter.get("/", (req, res) => {
   try {
     return res.render("home.handlebars", { pageTitle: "Home" });
   } catch (error) {
-    console.log(error);
+    logger.info(error);
     return res.status(500).json({ message: "Error loading home" });
   }
 });
@@ -48,29 +48,29 @@ webRouter.get("/products/:id", async (req, res) => {
       pageTitle: `Producto ${product.title}`,
     });
   } catch (error) {
-    console.log(error);
+    logger.info(error);
     return res.status(500).json({ message: "Error loading /products/:id" });
   }
 });
 
 webRouter.get("/realTimeProducts", (req, res) => {
   try {
-    console.log("Cliente conectado al realtime!");
+    logger.info("Cliente conectado al realtime!");
     return res.render("realTimeProducts.handlebars", {
       pageTitle: "Real Time Products",
     });
   } catch (error) {
-    console.log(error);
+    logger.info(error);
     return res.status(500).json({ message: "Error loading /realTimeProducts" });
   }
 });
 
 webRouter.get("/chat", (req, res) => {
   try {
-    console.log("Cliente conectado al chat!");
+    logger.info("Cliente conectado al chat!");
     return res.render("chat.handlebars", { pageTitle: "Chat" });
   } catch (error) {
-    console.log("route CHAT error: ", error);
+    logger.info("route CHAT error: ", error);
     return res.status(500).json({ message: "Error loading /chat" });
   }
 });
@@ -79,7 +79,7 @@ webRouter.get("/images", (req, res) => {
   try {
     res.render("images.handlebars", { pageTitle: "Images" });
   } catch (error) {
-    console.log(error);
+    logger.info(error);
     return res.status(500).json({ message: "Error loading /images" });
   }
 });
@@ -88,7 +88,7 @@ webRouter.post("/images", upload.single("image"), (req, res) => {
   try {
     if (req.file.filename) res.json({ url: req.file.filename });
   } catch (error) {
-    console.log(error);
+    logger.info(error);
     return res.status(500).json({ message: "Error uploading /image" });
   }
 });
@@ -110,7 +110,7 @@ webRouter.get("/carts/:id", async (req, res) => {
       baseUrl: BASE_URL + "/",
     });
   } catch (error) {
-    console.log(error);
+    logger.info(error);
     return res.status(500).json({ message: "Error loading /carts/:id" });
   }
 });

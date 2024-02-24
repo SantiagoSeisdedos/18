@@ -2,7 +2,6 @@ import { daoUsers } from "../dao/daoInstance.js";
 import { deleteTokenFromCookie } from "../middlewares/tokens.js";
 
 export async function authenticateUser(credentials) {
-  console.log("sessions.service credentials", credentials)
   const user = await daoUsers.authentication(credentials);
   return user;
 }

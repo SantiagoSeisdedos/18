@@ -1,3 +1,5 @@
+import { logger } from "../../src/utils/logger.js";
+
 const formEdit = document.querySelector("form");
 const inputs = document.querySelectorAll("input");
 
@@ -16,7 +18,7 @@ window.addEventListener("load", async (event) => {
     inputs[1].value = user.lastName;
     inputs[2].value = user.email;
   } catch (error) {
-    console.log(error);
+    logger.info(error);
     alert("Error loading /edit");
   }
 });

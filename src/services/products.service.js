@@ -48,7 +48,6 @@ class ProductsService {
         throw error;
       }
 
-      console.log("BEFORE DAO READONE");
       const product = await daoProducts.readOne(id);
       if (!product) {
         const error = new Error(

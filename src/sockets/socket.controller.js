@@ -1,6 +1,7 @@
 import "dotenv/config";
 import axios from "axios";
 import { BASE_URL } from "../config/config.js";
+import { logger } from "../utils/logger.js";
 
 export function onConnection(socketServer) {
   // Get products
@@ -8,17 +9,16 @@ export function onConnection(socketServer) {
     return await axios
       .get(`${BASE_URL}/api/products`)
       .then((res) => res.data)
-      .catch((err) => console.log(err.message));
+      .catch((err) => logger.info(err.message));
   }
 
   // Delete product
   async function deleteProduct(id) {
-    console.log("deleteProduct id: ", id);
     return await axios
       .delete(`${BASE_URL}/api/products/${id}`)
       .then((res) => res.data)
       .catch((err) =>
-        console.log("deleteProduct error: ", {
+        logger.info("deleteProduct error: ", {
           message: err.message,
           data: err.response.data.error,
           status: err.response.status,
@@ -49,7 +49,7 @@ export function onConnection(socketServer) {
         category,
       })
       .then((res) => res.data)
-      .catch((err) => console.log(err));
+      .catch((err) => logger.info(err));
   }
   // = = = End of Product Functions = = =
 
@@ -59,7 +59,7 @@ export function onConnection(socketServer) {
     return await axios
       .get(`${BASE_URL}/api/messages`)
       .then((res) => res.data)
-      .catch((err) => console.log("Error on getMessages socket", err));
+      .catch((err) => logger.info("Error on getMessages socket", err));
   }
 
   // Delete Message
@@ -67,15 +67,15 @@ export function onConnection(socketServer) {
     return await axios
       .delete(`${BASE_URL}/api/messages/${id}`)
       .then((res) => res.data)
-      .catch((err) => console.log("Error on deleteMessage socket", err));
+      .catch((err) => logger.info("Error on deleteMessage socket", err));
   }
 
   async function addMessage({ username, text }) {
-    console.log("addMessage socket: ", { username, text });
+    logger.info("addMessage socket: ", { username, text });
     return await axios
       .post(`${BASE_URL}/api/messages`, { username, text })
       .then((res) => res.data)
-      .catch((err) => console.log("Error on postMessage socket", err));
+      .catch((err) => logger.info("Error on postMessage socket", err));
   }
   // = = = End of Chat Functions = = =
 

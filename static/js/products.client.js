@@ -31,12 +31,10 @@ const initialize = async () => {
     }
 
     for (const product of products.docs) {
-      console.log("product: ", product);
       const li = document.createElement("li");
       const productLink = document.createElement("a");
       productLink.textContent = `${product?.title} - $${product?.price}`;
       productLink.href = `/products/${product._id}`; // Agrega un enlace a la vista de detalles del producto
-      console.log("productLink ", productLink.href);
       productLink.addEventListener("click", async (event) => {
         event.preventDefault();
         // Código para cargar la vista de detalles del producto

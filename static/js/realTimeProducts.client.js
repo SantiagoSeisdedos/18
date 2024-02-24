@@ -84,7 +84,6 @@ const sendProductData = async (username) => {
       username,
     },
   });
-  console.log("Cliente conectado al realtime!");
   // send message/product
   form?.addEventListener("submit", async (event) => {
     event.preventDefault();

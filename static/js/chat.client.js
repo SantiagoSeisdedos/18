@@ -1,3 +1,5 @@
+import { logger } from "../../src/utils/logger.js";
+
 const form = document.querySelector("form");
 const messageList = document.querySelector("ul");
 const messageInput = document.querySelector("#messageInput");
@@ -45,7 +47,7 @@ const enterChat = (username) => {
       username,
     },
   });
-  console.log("Cliente conectado al chat! Bienvenido", username);
+  logger.info("Cliente conectado al chat! Bienvenido", username);
 
   // User Conected
   socket.on("new-user", (username) => {
@@ -73,11 +75,9 @@ const enterChat = (username) => {
 
   // Send Message Event
   form?.addEventListener("submit", async (event) => {
-    console.log("Entre al form");
     event.preventDefault();
     const messageText = messageInput?.value;
     if (messageText) {
-      console.log("before emit send-message", messageText);
       socket.emit("addMessage", {
         username,
         text: messageText,
@@ -89,7 +89,6 @@ const enterChat = (username) => {
   // Get Chat Messages
   socket.on("getMessages", (messages) => {
     messageList.innerHTML = "";
-    console.log("before socket on getMessages", messages);
     for (const { username, text } of messages) {
       const li = document.createElement("li");
       li.textContent = `${username}: ${text}`;

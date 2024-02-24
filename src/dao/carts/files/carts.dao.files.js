@@ -2,6 +2,7 @@ import fs from "fs/promises";
 import { randomUUID } from "node:crypto";
 import { errorStatusMap } from "../../../utils/errorCodes.js";
 import { toPOJO, matches } from "../../utils.js";
+import { logger } from "../../../utils/logger.js";
 
 export class CartsDaoFiles {
   constructor(path) {
@@ -51,7 +52,7 @@ export class CartsDaoFiles {
 
       return newCart;
     } catch (error) {
-      console.log("createOne CARTS.DAO.FILE Error: ", error);
+      logger.error("createOne CARTS.DAO.FILE Error: ", error);
       throw new Error(`Error al crear el carrito: ${error.message}`);
     }
   }
@@ -123,7 +124,7 @@ export class CartsDaoFiles {
 
       return updatedCart;
     } catch (error) {
-      console.log("addProductToCart CARTS.DAO.FILE Error: ", error);
+      logger.error("addProductToCart CARTS.DAO.FILE Error: ", error);
       throw new Error(
         `Error al agregar el producto al carrito: ${error.message}`
       );

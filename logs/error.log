@@ -1,0 +1,3 @@
+{"level":"error","message":"Error message"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}

@@ -1,4 +1,5 @@
 import { errorStatusMap } from "../utils/errorCodes.js";
+import { logger } from "../utils/logger.js";
 
 export async function validateProductData(req, res, next) {
   try {
@@ -73,7 +74,7 @@ export async function validateId(req, res, next) {
 export async function validateUpdates(req, res, next) {
   try {
     const updates = req.body;
-    console.log("valid updates", updates);
+    logger.info("valid updates", updates);
     if (Object.keys(updates).length === 0) {
       const error = new Error("No se recibieron datos para actualizar");
       error.code = errorStatusMap.INCORRECT_DATA;

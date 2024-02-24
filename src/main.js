@@ -14,14 +14,18 @@ import { authentication } from "./middlewares/authentication.js";
 import { cookies } from "./middlewares/cookies.js";
 import { BASE_URL, PORT } from "./config/config.js";
 import { connect } from "../db/execution.config.js";
+import { logger } from "./utils/logger.js";
+import { httpLogger } from "./middlewares/httpLogger.js";
+import { loggerTestRouter } from "./routes/api/logger.router.js";
 
 const app = express();
 
 const server = app.listen(PORT, async () => {
   await connect();
-  console.log(`Server on port ${PORT}: ${BASE_URL}`);
+  logger.info(`Server on port ${PORT}: ${BASE_URL}`);
 });
 
+app.use(httpLogger);
 app.use(cookies);
 app.engine("handlebars", handlebars.engine());
 app.use(sessions);
@@ -41,5 +45,6 @@ app.use(express.static("views"));
 app.use(express.static("static"));
 
 // routers
+app.use("/loggerTest", loggerTestRouter);
 app.use("/", webRouter);
 app.use("/api", apiRouter);

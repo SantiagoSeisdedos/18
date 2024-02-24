@@ -1,3 +1,5 @@
+import { logger } from "../../src/utils/logger.js";
+
 const formLogin = document.querySelector("form");
 
 formLogin?.addEventListener("submit", async (event) => {
@@ -10,7 +12,6 @@ formLogin?.addEventListener("submit", async (event) => {
       body: new URLSearchParams(new FormData(formLogin)),
     });
 
-    console.log("response =>", response);
 
     if (response.status === 201) {
       const sesion = await response.json();
@@ -21,7 +22,7 @@ formLogin?.addEventListener("submit", async (event) => {
       throw new Error(error.message || error);
     }
   } catch (error) {
-    console.log("CATCH error", error);
+    logger.info("CATCH error", error);
     alert(error);
   }
 });

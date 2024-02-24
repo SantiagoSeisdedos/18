@@ -7,8 +7,6 @@ export async function postOrderController(req, res, next) {
   try {
     const { email, cart: userCart } = req.body;
 
-    console.log("CONTROLLER user", req.body);
-
     // Obtener el carrito
     const cart = await cartsService.readOne(userCart[0]._id);
 
@@ -19,17 +17,13 @@ export async function postOrderController(req, res, next) {
       throw error;
     }
 
-    console.log("CONTROLLER cart", cart, userCart[0]._id);
-
     // Verificar stock y actualizarlo si es necesario
     const productsWithoutStock = [];
     let amount = 0;
     for (const product of cart.products) {
-      console.log("product", product);
       const { _id, quantity } = product;
       const productInfo = await productsService.readOne(_id);
 
-      console.log("productInfo", productInfo, quantity);
       if (!productInfo || productInfo.stock < quantity) {
         // Si no hay suficiente stock, agregar el producto a una lista para informar al usuario
         productsWithoutStock.push({
@@ -57,8 +51,6 @@ export async function postOrderController(req, res, next) {
       purchaser: email,
       amount: amount,
     });
-
-    console.log("CONTROLLER newOrder", newOrder);
 
     // Limpiar el carrito
     await cartsService.deleteProductsFromCart(userCart[0]._id);

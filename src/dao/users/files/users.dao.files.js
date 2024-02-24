@@ -81,12 +81,9 @@ export class UsersDaoFiles {
 
   async authentication(credentials) {
     try {
-      console.log("credentials", credentials);
       const { email, password } = credentials;
       const users = await this.#readUsers();
       const user = users.find((user) => user.email === email);
-
-      console.log("user", user);
 
       if (!user || !areHashesEqual(password, user.password)) {
         const error = new Error("Invalid credentials");

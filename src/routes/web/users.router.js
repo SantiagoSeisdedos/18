@@ -1,4 +1,5 @@
 import { Router } from "express";
+import { logger } from "../../utils/logger.js";
 
 export const usersRouter = Router();
 
@@ -6,7 +7,7 @@ usersRouter.get("/register", (req, res) => {
   try {
     return res.render("register.handlebars", { pageTitle: "Register" });
   } catch (error) {
-    console.log(error);
+    logger.info(error);
     return res.status(500).json({ message: "Error loading /register" });
   }
 });
@@ -17,7 +18,7 @@ usersRouter.get("/resetPassword", (req, res) => {
       pageTitle: "Reset Password",
     });
   } catch (error) {
-    console.log(error);
+    logger.info(error);
     return res.status(500).json({ message: "Error loading /resetPassword" });
   }
 });
@@ -28,7 +29,7 @@ usersRouter.get("/edit", (req, res) => {
       pageTitle: "Edit Profiles",
     });
   } catch (error) {
-    console.log(error);
+    logger.info(error);
     return res.status(500).json({ message: "Error loading /resetPassword" });
   }
 });

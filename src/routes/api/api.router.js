@@ -7,6 +7,7 @@ import { messagesRouter } from "./messages.router.js";
 import { errorHandler } from "../../middlewares/errorHandler.js";
 import { formattedResponses } from "../../middlewares/formattedResponses.js";
 import { ordersRouter } from "./orders.router.js";
+import { mocksRouter } from "./mocks.router.js";
 
 export const apiRouter = Router();
 
@@ -29,5 +30,9 @@ apiRouter.use("/orders", ordersRouter);
 
 // TODO: Messages
 apiRouter.use("/messages", messagesRouter);
+
+// Mocks
+apiRouter.use("/mocks", mocksRouter);
+
 
 apiRouter.use(errorHandler);
