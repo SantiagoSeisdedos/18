@@ -11,18 +11,32 @@ import {
 
 const userSchema = new mongoose.Schema(
   {
-    _id: { type: String, default: randomUUID },
+    _id: { type: String, required: true, default: randomUUID },
     name: { type: String, required: true },
-    lastName: { type: String, default: "(sin especificar)" },
+    lastName: { type: String, required: true, default: "(sin especificar)" },
     email: { type: String, unique: true, required: true },
     age: { type: Number },
-    password: { type: String, default: "(no aplica)" },
-    rol: { type: String, enum: ["admin", "user"], default: "user" },
-    profilePicture: { type: String, default: DEFAULT_USER_AVATAR_PATH },
+    password: { type: String, required: true, default: "(no aplica)" },
+    rol: {
+      type: String,
+      required: true,
+      enum: ["admin", "user"],
+      default: "user",
+    },
+    profilePicture: {
+      type: String,
+      required: true,
+      default: DEFAULT_USER_AVATAR_PATH,
+    },
     cart: {
       type: [
         {
-          _id: { type: String, ref: "cart", default: randomUUID },
+          _id: {
+            type: String,
+            ref: "cart",
+            required: true,
+            default: randomUUID,
+          },
         },
       ],
       default: "",
@@ -31,6 +45,11 @@ const userSchema = new mongoose.Schema(
   {
     strict: "throw",
     versionKey: false,
+    methods: {
+      toPojo: () => {
+        return JSON.parse(JSON.stringify(this));
+      },
+    },
     statics: {
       login: async function (email, password) {
         let userData;
@@ -73,7 +92,7 @@ const userSchema = new mongoose.Schema(
             throw error;
           }
 
-          userData.password = hashPassword(userData.password);
+          userData.password = await hashPassword(userData.password);
 
           if (userData.email === ADMIN_EMAIL) userData.rol = "admin";
           const user = await this.create(userData);
@@ -89,8 +108,9 @@ const userSchema = new mongoose.Schema(
       },
       authentication: async function ({ username, password, email }) {
         try {
-          const user = await this.findOne({ username });
-          if (!user || !areHashesEqual(password, user?.password)) {
+          const query = username ? { username } : { email };
+          const user = await this.findOne(query);
+          if (!user || !(await areHashesEqual(password, user?.password))) {
             const error = new Error("Invalid credentials");
             error.code = errorStatusMap.UNAUTHORIZED;
             throw error;
@@ -102,6 +122,31 @@ const userSchema = new mongoose.Schema(
       },
     },
   }
+  // statics: {
+  //   createOne: async function (userData) {
+  //     await this.create(userData);
+  //   },
+  //   readOne: async function (query) {
+  //     const userDoc = await this.findOne(query);
+  //     return userDoc.toPojo();
+  //   },
+  //   readMany: async function () {
+  //     const users = await this.find();
+  //     return users.map((user) => user.toPojo());
+  //   },
+  //   updateOne: async function (email, userData) {
+  //     await this.create(userData);
+  //   },
+  //   updateMany: async function (userData) {
+  //     await this.create(userData);
+  //   },
+  //   deleteOne: async function (email) {
+  //     await this.create(userData);
+  //   },
+  //   deleteMany: async function () {
+  //     await this.create(userData);
+  //   },
+  // },
 );
 
 export default userSchema;

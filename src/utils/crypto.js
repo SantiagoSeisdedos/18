@@ -3,13 +3,12 @@ import jwt from "jsonwebtoken";
 import { errorStatusMap } from "./errorCodes.js";
 import { JWT_SECRET } from "../config/config.js";
 
-
-export function hashPassword(phrase) {
+export async function hashPassword(phrase) {
   if (!phrase) throw new Error("Can't hash empty phrase: ", phrase);
   return hashSync(phrase, genSaltSync(10));
 }
 
-export function areHashesEqual(received, stored) {
+export async function areHashesEqual(received, stored) {
   return compareSync(received, stored);
 }
 

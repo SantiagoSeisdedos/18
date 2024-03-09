@@ -36,4 +36,21 @@ export class UsersDaoMongoose {
     const user = await this.usersModel.login(username, password);
     return user;
   }
+
+  async updateUser(email, userData) {
+    try {
+      const updatedUser = await this.usersModel
+        .findOneAndUpdate({ email }, userData, { new: true })
+        .lean();
+
+      if (!updatedUser) {
+        const error = new Error("User not found");
+        error.code = errorStatusMap.NOT_FOUND;
+        throw error;
+      }
+      return updatedUser;
+    } catch (error) {
+      throw error;
+    }
+  }
 }

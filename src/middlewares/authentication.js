@@ -20,9 +20,13 @@ passport.use(
     },
     async function verificationCallback(username, password, done) {
       try {
+        console.log("01 verificationCallback");
+        console.log("username", username, "password", password);
         const userData = await userModel.login(username, password);
+        console.log("02 userData", userData);
         done(null, userData);
       } catch (error) {
+        console.log("03 error", error);
         done(error);
       }
     }
@@ -75,12 +79,12 @@ passport.use(
   )
 );
 
-// passport.serializeUser((user, next) => {
-//   next(null, user);
-// });
-// passport.deserializeUser((user, next) => {
-//   next(null, user);
-// });
+passport.serializeUser((user, next) => {
+  next(null, user);
+});
+passport.deserializeUser((user, next) => {
+  next(null, user);
+});
 
 export const authentication = passport.initialize();
-// export const passportSession = passport.session();
+export const passportSession = passport.session();

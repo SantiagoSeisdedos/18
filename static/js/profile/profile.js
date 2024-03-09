@@ -4,13 +4,14 @@ const spans = document.querySelectorAll("span");
 window.addEventListener("load", async () => {
   try {
     const response = await fetch("/api/users/current");
+    console.log("response", response);
 
     if (response.status === 403) {
       throw new Error("Unauthorized");
     }
 
     const result = await response.json();
-    const user = result.payload;
+    const user = result.data; // Cambiado de result.payload a result.data
 
     spans[0].innerHTML = user.name;
     spans[1].innerHTML = user.lastName;
@@ -28,7 +29,9 @@ window.addEventListener("load", async () => {
     if (error.message === "Unauthorized") {
       alert("No autorizado!");
       return (window.location.href = "/login");
-    } else alert(error);
+    } else {
+      console.log("profile catch", error);
+    }
   }
 });
 

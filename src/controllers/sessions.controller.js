@@ -1,3 +1,4 @@
+import { tokenizeUserInCookie } from "../middlewares/tokens.js";
 import {
   authenticateUser,
   deleteAuthToken,
@@ -6,17 +7,15 @@ import {
 export async function loginUser(req, res, next) {
   try {
     const user = await authenticateUser(req.body);
+    req.user = user;
     if (!user) {
       const error = new Error("Invalid credentials");
       error.code = 401;
       throw error;
     }
 
-    res.status(201).json({
-      status: "success",
-      message: "Login successful!",
-      payload: user,
-    });
+    await tokenizeUserInCookie(req, res, next);
+    res.status(201).json(user);
   } catch (error) {
     next(error);
   }

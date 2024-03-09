@@ -43,6 +43,21 @@ class UserService {
       throw error;
     }
   }
+
+  async updateUser(email, userData) {
+    try {
+      const updatedUser = await daoUsers.updateUser(email, userData);
+      if (!updatedUser) {
+        const error = new Error("User not found");
+        error.code = errorStatusMap.NOT_FOUND;
+        throw error;
+      }
+      return updatedUser;
+    } catch (error) {
+      throw error;
+    }
+  }
+
 }
 
 export const usersService = new UserService();

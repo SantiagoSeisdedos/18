@@ -1,7 +1,6 @@
-import { logger } from "../../src/utils/logger.js";
-
 const formEdit = document.querySelector("form");
 const inputs = document.querySelectorAll("input");
+const emailSpan = document.querySelector("span");
 
 window.addEventListener("load", async (event) => {
   try {
@@ -12,13 +11,13 @@ window.addEventListener("load", async (event) => {
     }
 
     const result = await response.json();
-    const user = result.payload;
+    const user = result.data; // Cambiado de result.payload a result.data
 
-    inputs[0].value = user.name;
-    inputs[1].value = user.lastName;
-    inputs[2].value = user.email;
+    inputs[0].innerHTML = user.name;
+    inputs[1].innerHTML = user.lastName;
+    emailSpan.innerHTML = user.email;
   } catch (error) {
-    logger.info(error);
+    console.log(error);
     alert("Error loading /edit");
   }
 });
@@ -26,23 +25,30 @@ window.addEventListener("load", async (event) => {
 formEdit?.addEventListener("submit", async (event) => {
   event.preventDefault();
 
-  const formData = new FormData(formEdit);
-  formData.append("email", inputs[2].value);
+  const name = inputs[0].value;
+  const lastName = inputs[1].value;
+  const email = emailSpan.textContent;
+
+  const formData = new FormData();
+  formData.append("name", name);
+  formData.append("lastName", lastName);
+  formData.append("email", email);
 
   const body = new URLSearchParams(formData);
 
-  const response = await fetch("/api/users", {
+  const response = await fetch(`/api/users`, {
     method: "PUT",
     headers: {
       "Content-Type": "application/x-www-form-urlencoded",
     },
     body,
   });
-
+  console.log("02 response", response);
   if (response.status === 200) {
     window.location.href = "/profile";
   } else {
     const error = await response.json();
+    console.log("03 edit profile error", error);
     alert(error.message);
   }
 });

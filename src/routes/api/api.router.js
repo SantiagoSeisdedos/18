@@ -16,23 +16,15 @@ apiRouter.use(formattedResponses);
 apiRouter.use(json());
 apiRouter.use(urlencoded({ extended: true }));
 
-// TODO: AUTH
 apiRouter.use("/sessions", sessionsRouter);
 apiRouter.use("/users", usersRouter);
 
-// Products API working ok. Web probably broken
 apiRouter.use("/products", productsRouter);
-
-// Products API working ok. Web probably broken
 apiRouter.use("/carts", cartsRouter);
-
 apiRouter.use("/orders", ordersRouter);
 
 // TODO: Messages
 apiRouter.use("/messages", messagesRouter);
 
-// Mocks
 apiRouter.use("/mocks", mocksRouter);
-
-
 apiRouter.use(errorHandler);

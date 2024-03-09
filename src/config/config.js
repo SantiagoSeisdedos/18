@@ -1,6 +1,6 @@
 import dotenv from "dotenv";
 
-const ENV = process.argv.slice(4)[0];
+export const ENV = process.argv.slice(4)[0];
 
 const path = ENV ? "./src/config/prod.env" : "./src/config/dev.env";
 dotenv.config({ path });
@@ -26,7 +26,15 @@ export const PRODUCTS_PATH_JSON = process.env.PRODUCTS_PATH_JSON;
 export const ORDERS_PATH_JSON = process.env.ORDERS_PATH_JSON;
 export const PORT = process.env.PORT;
 
+export const EMAIL_USER = process.env.EMAIL_USER;
+export const EMAIL_PASS = process.env.EMAIL_PASS;
+
+// export const loggerLevel = {
+//   CONSOLE: EXECUTION_ENV === "prod" ? "error" : "http",
+//   FILE: EXECUTION_ENV === "prod" ? "http" : "error",
+// };
+
 export const loggerLevel = {
-  CONSOLE: EXECUTION_ENV === "prod" ? "error" : "http",
+  CONSOLE: EXECUTION_ENV === "prod" ? "http" : "http",
   FILE: EXECUTION_ENV === "prod" ? "http" : "error",
 };

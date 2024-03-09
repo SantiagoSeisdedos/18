@@ -8,10 +8,12 @@ const cookieOptions = {
 
 export async function tokenizeUserInCookie(req, res, next) {
   try {
+    console.log("01 tokenizeUserInCookie: ", req.user)
     const token = await encrypt(req.user);
     res.cookie("authorization", token, cookieOptions);
     next();
   } catch (error) {
+    console.log("02 ERROR tokenizeUserInCookie: ", error)
     next(error);
   }
 }

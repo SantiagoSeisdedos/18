@@ -10,7 +10,10 @@ import {
 import { sessions } from "./middlewares/sessions.js";
 import { apiRouter } from "./routes/api/api.router.js";
 import { webRouter } from "./routes/web/web.router.js";
-import { authentication } from "./middlewares/authentication.js";
+import {
+  authentication,
+  passportSession,
+} from "./middlewares/authentication.js";
 import { cookies } from "./middlewares/cookies.js";
 import { BASE_URL, PORT } from "./config/config.js";
 import { connect } from "../db/execution.config.js";
@@ -25,12 +28,12 @@ const server = app.listen(PORT, async () => {
   logger.info(`Server on port ${PORT}: ${BASE_URL}`);
 });
 
+app.use(express.json());
 app.use(httpLogger);
 app.use(cookies);
 app.engine("handlebars", handlebars.engine());
 app.use(sessions);
-app.use(authentication);
-// app.use(passportInitialize, passportSession);
+app.use(authentication, passportSession);
 
 // Socket.io
 const webSocketServer = new Server(server);
@@ -48,3 +51,5 @@ app.use(express.static("static"));
 app.use("/loggerTest", loggerTestRouter);
 app.use("/", webRouter);
 app.use("/api", apiRouter);
+
+// Mensajeria 3:48:00
