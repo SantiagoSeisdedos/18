@@ -1,5 +1,5 @@
 `npm i`
 
-`npm run dev`
+`npm run dev prod`
 
-[Demo Video 10](https://drive.google.com/file/d/12ZDJ_2UR1uI1OE2Uel-PTOGaW7lDGOl6/view?usp=sharing)
+[DOCS](http://localhost:8080/api-docs/)
