@@ -1,0 +1,18 @@
+paths:
+  /api/carts/{id}:
+    delete:
+      tags:
+        - carts
+      summary: Delete all products from a cart
+      description: Delete all products from a cart
+      operationId: deleteProductsFromCart
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: The id of the cart
+          schema:
+            type: string
+      responses:
+        "204":
+          description: The products were deleted

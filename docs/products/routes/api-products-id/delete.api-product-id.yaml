@@ -1,0 +1,24 @@
+paths:
+  /api/products/{id}:
+    delete:
+      tags:
+        - products
+      summary: Delete a product by id
+      description: Delete a product by id
+      operationId: deleteProduct
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: The id of the product
+          schema:
+            type: string
+      responses:
+        "204":
+          description: The product was deleted
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Product"

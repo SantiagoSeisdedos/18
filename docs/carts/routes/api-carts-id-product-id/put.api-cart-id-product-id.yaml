@@ -1,0 +1,75 @@
+paths:
+  /api/carts/{id}/product/{pid}:
+    put:
+      tags:
+        - carts
+      summary: Update product in cart by ID
+      description: Updates the product quantity in a cart by ID
+      operationId: updateProductCartController
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: The id of the cart
+          schema:
+            type: string
+        - name: pid
+          in: path
+          required: true
+          description: The id of the product
+          schema:
+            type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                quantity:
+                  type: integer
+                  description: The quantity of the product
+                  example: 1
+      responses:
+        "200":
+          description: The product was updated in the cart
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                    description: The id of the cart
+                    example: 5f4e3f7b8f3d1e0a1b2f3d4e
+                  products:
+                    type: array
+                    description: The products in the cart
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: string
+                          description: The id of the product
+                          example: 5f4e3f7b8f3d1e0a1b2f3d4e
+                        quantity:
+                          type: integer
+                          description: The quantity of the product
+                          example: 1
+        "404":
+          description: The cart or product was not found
+        "500":
+          description: Internal Server Error
+# // Updates the quantity of a product in a cart
+# cartsRouter.put("/:id/product/:pid", validateId, updateProductCartController);
+
+# export async function updateProductCartController(req, res, next) {
+#   try {
+#     const { id, pid } = req.params;
+#     const { quantity } = req.body;
+
+#     const updatedCart = await cartsService.addProductToCart(id, pid, quantity);
+#     res.json(updatedCart);
+#   } catch (error) {
+#     next(error);
+#   }
+# }

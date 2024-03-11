@@ -1,6 +1,6 @@
 import dotenv from "dotenv";
 
-export const ENV = process.argv.slice(4)[0];
+export const ENV = process.argv.slice(5)[0];
 
 const path = ENV ? "./src/config/prod.env" : "./src/config/dev.env";
 dotenv.config({ path });
@@ -29,12 +29,29 @@ export const PORT = process.env.PORT;
 export const EMAIL_USER = process.env.EMAIL_USER;
 export const EMAIL_PASS = process.env.EMAIL_PASS;
 
+export const loggerLevel = {
+  CONSOLE: EXECUTION_ENV === "prod" ? "error" : "http",
+  FILE: EXECUTION_ENV === "prod" ? "http" : "error",
+};
+
 // export const loggerLevel = {
-//   CONSOLE: EXECUTION_ENV === "prod" ? "error" : "http",
+//   CONSOLE: EXECUTION_ENV === "prod" ? "http" : "http",
 //   FILE: EXECUTION_ENV === "prod" ? "http" : "error",
 // };
 
-export const loggerLevel = {
-  CONSOLE: EXECUTION_ENV === "prod" ? "http" : "http",
-  FILE: EXECUTION_ENV === "prod" ? "http" : "error",
+export const SWAGGER_CONFIG = {
+  definition: {
+    openapi: "3.0.0",
+    info: {
+      version: "1.0.0",
+      title: "API Documentation",
+      description: "API Documentation",
+    },
+    servers: [
+      {
+        url: "http://localhost:8080",
+      },
+    ],
+  },
+  apis: ["./docs/**/*.yaml"],
 };

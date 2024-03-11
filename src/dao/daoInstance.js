@@ -10,7 +10,7 @@ import {
 
 import { CartsDaoFiles } from "./carts/files/carts.dao.files.js";
 import { CartsDaoMongoose } from "./carts/mongoose/carts.dao.mongoose.js";
-import cartSchema from "./carts/mongoose/carts.model.js";
+import cartSchema from "./carts/mongoose/carts.model.mongoose.js";
 
 import { ProductsDaoFiles } from "./products/files/products.dao.files.js";
 import { ProductsDaoMongoose } from "./products/mongoose/products.dao.mongoose.js";

@@ -1,0 +1,22 @@
+paths:
+  /api/products:
+    post:
+      tags:
+        - products
+      summary: Create a new product
+      description: Create a new product
+      operationId: postProduct
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Product"
+      responses:
+        "201":
+          description: The product was created
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Product"

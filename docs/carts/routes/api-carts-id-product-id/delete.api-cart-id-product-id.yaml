@@ -1,0 +1,47 @@
+paths:
+  /api/carts/{id}/product/{pid}:
+    delete:
+      tags:
+        - carts
+      summary: Delete product from cart by ID
+      description: Deletes a product from a cart by ID
+      operationId: deleteProductFromCartController
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: The id of the cart
+          schema:
+            type: string
+        - name: pid
+          in: path
+          required: true
+          description: The id of the product
+          schema:
+            type: string
+      responses:
+        "204":
+          description: The product was deleted from the cart
+        "404":
+          description: The cart or product was not found
+        "500":
+          description: Internal Server Error
+
+# // Delete product from cart by ID
+# cartsRouter.delete(
+#   "/:id/product/:pid",
+#   validateId,
+#   deleteProductFromCartController
+# );
+
+# export async function deleteProductFromCartController(req, res, next) {
+#   try {
+#     const { id, pid } = req.params;
+
+#     const updatedCart = await cartsService.deleteProductFromCart(id, pid);
+#     res.json(updatedCart);
+#   } catch (error) {
+#     next(error);
+#   }
+# }
+

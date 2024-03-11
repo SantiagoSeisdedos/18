@@ -1,12 +1,13 @@
 import "dotenv/config";
 import { Router } from "express";
+import axios from "axios";
+import swaggerJsdoc from "swagger-jsdoc";
+import swaggerUiExpress from "swagger-ui-express";
 
+import { BASE_URL, SWAGGER_CONFIG } from "../../config/config.js";
 import { usersRouter } from "./users.router.js";
 import { sessionsRouter } from "./sessions.router.js";
 import { upload } from "../../middlewares/saveImage.js";
-
-import axios from "axios";
-import { BASE_URL } from "../../config/config.js";
 import { logger } from "../../utils/logger.js";
 
 export const webRouter = Router();
@@ -114,6 +115,13 @@ webRouter.get("/carts/:id", async (req, res) => {
     return res.status(500).json({ message: "Error loading /carts/:id" });
   }
 });
+
+const spec = swaggerJsdoc(SWAGGER_CONFIG);
+webRouter.use(
+  "/api-docs",
+  swaggerUiExpress.serve,
+  swaggerUiExpress.setup(spec)
+);
 
 // AUTH
 webRouter.use(sessionsRouter);

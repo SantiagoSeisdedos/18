@@ -87,7 +87,7 @@ export async function deleteProductController(req, res, next) {
     }
 
     res.json({
-      status: 201,
+      status: 204,
       message: "Producto eliminado correctamente.",
       data: products,
     });

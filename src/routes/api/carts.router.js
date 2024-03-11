@@ -14,16 +14,14 @@ import { isAuthorized } from "../../middlewares/authorization.js";
 
 export const cartsRouter = Router();
 
-// GET ALL
 cartsRouter.get("/", getCartsController);
-
-// GET BY ID
-cartsRouter.get("/:id", validateId, getCartController);
-
-// POST: Create new cart
 cartsRouter.post("/", postCartController);
 
-// POST: Add product to cart by ID
+cartsRouter.get("/:id", validateId, getCartController);
+// deletes all products from cart
+cartsRouter.delete("/:id", validateId, deleteProductsFromCartController);
+
+// Add product to cart by ID
 cartsRouter.post(
   "/:id/product/:pid",
   passport.authenticate("jwt", { failWithError: true, session: false }),
@@ -32,15 +30,12 @@ cartsRouter.post(
   addProductToCartController
 );
 
-// DELETE api/carts/:cid/products/:pid deberá eliminar del carrito el producto seleccionado.
+// Delete product from cart by ID
 cartsRouter.delete(
   "/:id/product/:pid",
   validateId,
   deleteProductFromCartController
 );
 
-// PUT api/carts/:cid/products/:pid deberá poder actualizar SÓLO la cantidad de ejemplares del producto por cualquier cantidad pasada desde req.body
+// Updates the quantity of a product in a cart
 cartsRouter.put("/:id/product/:pid", validateId, updateProductCartController);
-
-// // DELETE api/carts/:cid deberá eliminar todos los productos del carrito
-cartsRouter.delete("/:id", validateId, deleteProductsFromCartController);

@@ -1,0 +1,22 @@
+paths:
+  /api/carts/{id}:
+    get:
+      tags:
+        - carts
+      summary: Get a cart by id
+      description: Get a cart by id
+      operationId: getCart
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: The id of the cart
+          schema:
+            type: string
+      responses:
+        "200":
+          description: The cart
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Cart"

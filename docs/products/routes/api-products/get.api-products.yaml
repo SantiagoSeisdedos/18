@@ -1,0 +1,17 @@
+paths:
+  /api/products:
+    get:
+      tags:
+        - products
+      summary: Get all products
+      description: Get all products
+      operationId: getProducts
+      responses:
+        "200":
+          description: A list of products
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Product"

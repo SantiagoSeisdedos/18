@@ -1,0 +1,62 @@
+paths:
+  /api/carts/{id}/product/{pid}:
+    post:
+      tags:
+        - carts
+      summary: Add product to cart by ID
+      description: Adds a product to a cart by ID
+      operationId: addProductToCartController
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: The id of the cart
+          schema:
+            type: string
+            format: uuid
+        - name: pid
+          in: path
+          required: true
+          description: The id of the product
+          schema:
+            type: string
+            format: uuid
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                quantity:
+                  type: integer
+                  format: int32
+                  description: The quantity of the product
+                  example: 1
+      responses:
+        "200":
+          description: The updated cart
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Cart"
+# // Add product to cart by ID
+# cartsRouter.post(
+#   "/:id/product/:pid",
+#   passport.authenticate("jwt", { failWithError: true, session: false }),
+#   isAuthorized(["user", "admin"]),
+#   validateId,
+#   addProductToCartController
+# );
+
+# export async function addProductToCartController(req, res, next) {
+#   try {
+#     const { id, pid } = req.params;
+#     const { quantity = 1 } = req.body;
+
+#     const updatedCart = await cartsService.addProductToCart(id, pid, quantity);
+#     res.json(updatedCart);
+#   } catch (error) {
+#     next(error);
+#   }
+# }
+

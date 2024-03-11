@@ -2108,3 +2108,333 @@
 {"level":"http","message":"[GET] /css/navBar.client.css"}
 {"level":"http","message":"[GET] /js/products.client.js"}
 {"level":"http","message":"[GET] /api/products"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"http","message":"[GET] /"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /favicon.ico"}
+{"level":"http","message":"[GET] /docs"}
+{"level":"http","message":"[GET] /docs/"}
+{"level":"http","message":"[GET] /docs/swagger-ui.css"}
+{"level":"http","message":"[GET] /docs/swagger-ui-bundle.js"}
+{"level":"http","message":"[GET] /docs/swagger-ui-standalone-preset.js"}
+{"level":"http","message":"[GET] /docs/swagger-ui-init.js"}
+{"level":"http","message":"[GET] /docs/favicon-32x32.png"}
+{"level":"http","message":"[GET] /docs/favicon-32x32.png"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"http","message":"[GET] /"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /favicon.ico"}
+{"level":"http","message":"[GET] /docz"}
+{"level":"http","message":"[GET] /docs"}
+{"level":"http","message":"[GET] /docs/"}
+{"level":"http","message":"[GET] /docs/swagger-ui.css"}
+{"level":"http","message":"[GET] /docs/swagger-ui-bundle.js"}
+{"level":"http","message":"[GET] /docs/swagger-ui-standalone-preset.js"}
+{"level":"http","message":"[GET] /docs/swagger-ui-init.js"}
+{"level":"http","message":"[GET] /docs/favicon-32x32.png"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"http","message":"[GET] /docs/"}
+{"level":"http","message":"[GET] /docs/swagger-ui.css"}
+{"level":"http","message":"[GET] /docs/swagger-ui-bundle.js"}
+{"level":"http","message":"[GET] /docs/swagger-ui-standalone-preset.js"}
+{"level":"http","message":"[GET] /docs/swagger-ui-init.js"}
+{"level":"http","message":"[GET] /docs/favicon-32x32.png"}
+{"level":"http","message":"[GET] /docs/favicon-32x32.png"}
+{"level":"http","message":"[GET] /docs/"}
+{"level":"http","message":"[GET] /docs/swagger-ui.css"}
+{"level":"http","message":"[GET] /docs/swagger-ui-bundle.js"}
+{"level":"http","message":"[GET] /docs/swagger-ui-standalone-preset.js"}
+{"level":"http","message":"[GET] /docs/swagger-ui-init.js"}
+{"level":"http","message":"[GET] /docs/favicon-32x32.png"}
+{"level":"http","message":"[GET] /docs/"}
+{"level":"http","message":"[GET] /docs/swagger-ui.css"}
+{"level":"http","message":"[GET] /docs/swagger-ui-bundle.js"}
+{"level":"http","message":"[GET] /docs/swagger-ui-standalone-preset.js"}
+{"level":"http","message":"[GET] /"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /docs/"}
+{"level":"http","message":"[GET] /docs/swagger-ui.css"}
+{"level":"http","message":"[GET] /docs/swagger-ui-bundle.js"}
+{"level":"http","message":"[GET] /docs/swagger-ui-standalone-preset.js"}
+{"level":"http","message":"[GET] /docs/swagger-ui-init.js"}
+{"level":"http","message":"[GET] /docs/favicon-32x32.png"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"http","message":"[GET] /docs/"}
+{"level":"http","message":"[GET] /docs/swagger-ui.css"}
+{"level":"http","message":"[GET] /docs/swagger-ui-bundle.js"}
+{"level":"http","message":"[GET] /docs/swagger-ui-standalone-preset.js"}
+{"level":"http","message":"[GET] /docs/swagger-ui-init.js"}
+{"level":"http","message":"[GET] /docs/favicon-32x32.png"}
+{"level":"http","message":"[GET] /docs/favicon-32x32.png"}
+{"level":"http","message":"[GET] /docs/"}
+{"level":"http","message":"[GET] /docs/swagger-ui.css"}
+{"level":"http","message":"[GET] /docs/swagger-ui-bundle.js"}
+{"level":"http","message":"[GET] /docs/swagger-ui-standalone-preset.js"}
+{"level":"http","message":"[GET] /docs/swagger-ui-init.js"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"http","message":"[GET] /docs/favicon-32x32.png"}
+{"level":"http","message":"[GET] /docs/favicon-32x32.png"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"http","message":"[GET] /docs/"}
+{"level":"http","message":"[GET] /docs/swagger-ui.css"}
+{"level":"http","message":"[GET] /docs/swagger-ui-bundle.js"}
+{"level":"http","message":"[GET] /docs/swagger-ui-standalone-preset.js"}
+{"level":"http","message":"[GET] /docs/swagger-ui-init.js"}
+{"level":"http","message":"[GET] /docs/favicon-32x32.png"}
+{"level":"http","message":"[GET] /docs/favicon-32x32.png"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"http","message":"[GET] /docs/"}
+{"level":"http","message":"[GET] /docs/"}
+{"level":"http","message":"[GET] /"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /api-docs"}
+{"level":"http","message":"[GET] /api-docs/"}
+{"level":"http","message":"[GET] /api-docs/swagger-ui.css"}
+{"level":"http","message":"[GET] /api-docs/swagger-ui-bundle.js"}
+{"level":"http","message":"[GET] /api-docs/swagger-ui-standalone-preset.js"}
+{"level":"http","message":"[GET] /api-docs/swagger-ui-init.js"}
+{"level":"http","message":"[GET] /api-docs/favicon-32x32.png"}
+{"level":"http","message":"[GET] /api-docs/favicon-32x32.png"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"http","message":"[GET] /api-docs/"}
+{"level":"http","message":"[GET] /api-docs/swagger-ui.css"}
+{"level":"http","message":"[GET] /api-docs/swagger-ui-bundle.js"}
+{"level":"http","message":"[GET] /api-docs/swagger-ui-standalone-preset.js"}
+{"level":"http","message":"[GET] /api-docs/swagger-ui-init.js"}
+{"level":"http","message":"[GET] /api-docs/favicon-32x32.png"}
+{"level":"http","message":"[GET] /api-docs/favicon-32x32.png"}
+{"level":"http","message":"[GET] /api-docs/"}
+{"level":"http","message":"[GET] /api-docs/swagger-ui.css"}
+{"level":"http","message":"[GET] /api-docs/swagger-ui-bundle.js"}
+{"level":"http","message":"[GET] /api-docs/swagger-ui-standalone-preset.js"}
+{"level":"http","message":"[GET] /api-docs/swagger-ui-init.js"}
+{"level":"http","message":"[GET] /api-docs/favicon-32x32.png"}
+{"level":"http","message":"[GET] /api-docs/favicon-32x32.png"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"http","message":"[GET] /api-docs/"}
+{"level":"http","message":"[GET] /api-docs/swagger-ui.css"}
+{"level":"http","message":"[GET] /api-docs/swagger-ui-bundle.js"}
+{"level":"http","message":"[GET] /api-docs/swagger-ui-standalone-preset.js"}
+{"level":"http","message":"[GET] /api-docs/swagger-ui-init.js"}
+{"level":"http","message":"[GET] /api-docs/favicon-32x32.png"}
+{"level":"http","message":"[GET] /api-docs/favicon-32x32.png"}
+{"level":"http","message":"[GET] /api/products"}
+{"level":"http","message":"[GET] /api/products"}
+{"level":"http","message":"[POST] /api/products"}
+{"level":"error","message":"UNAUTHORIZED - Unauthorized | [STATUS: 401]"}
+{"level":"http","message":"[POST] /api/products"}
+{"level":"error","message":"UNAUTHORIZED - Unauthorized | [STATUS: 401]"}
+{"level":"http","message":"[GET] /api-docs/"}
+{"level":"http","message":"[GET] /api-docs/swagger-ui.css"}
+{"level":"http","message":"[GET] /api-docs/swagger-ui-bundle.js"}
+{"level":"http","message":"[GET] /api-docs/swagger-ui-standalone-preset.js"}
+{"level":"http","message":"[GET] /api-docs/swagger-ui-init.js"}
+{"level":"http","message":"[GET] /api-docs/favicon-32x32.png"}
+{"level":"http","message":"[GET] /api-docs/favicon-32x32.png"}
+{"level":"http","message":"[GET] /api/products"}
+{"level":"http","message":"[GET] /api-docs/"}
+{"level":"http","message":"[GET] /api-docs/swagger-ui.css"}
+{"level":"http","message":"[GET] /api-docs/swagger-ui-bundle.js"}
+{"level":"http","message":"[GET] /api-docs/swagger-ui-init.js"}
+{"level":"http","message":"[GET] /api-docs/swagger-ui-standalone-preset.js"}
+{"level":"http","message":"[GET] /api-docs/favicon-32x32.png"}
+{"level":"http","message":"[GET] /api-docs/favicon-32x32.png"}
+{"level":"http","message":"[GET] /api-docs/"}
+{"level":"http","message":"[GET] /api-docs/swagger-ui.css"}
+{"level":"http","message":"[GET] /api-docs/swagger-ui-bundle.js"}
+{"level":"http","message":"[GET] /api-docs/swagger-ui-standalone-preset.js"}
+{"level":"http","message":"[GET] /api-docs/swagger-ui-init.js"}
+{"level":"http","message":"[GET] /api-docs/favicon-32x32.png"}
+{"level":"http","message":"[GET] /api-docs/favicon-32x32.png"}
+{"level":"http","message":"[GET] /api-docs/"}
+{"level":"http","message":"[GET] /api-docs/swagger-ui.css"}
+{"level":"http","message":"[GET] /api-docs/swagger-ui-bundle.js"}
+{"level":"http","message":"[GET] /api-docs/swagger-ui-standalone-preset.js"}
+{"level":"http","message":"[GET] /api-docs/swagger-ui-init.js"}
+{"level":"http","message":"[GET] /api-docs/favicon-32x32.png"}
+{"level":"http","message":"[GET] /api-docs/favicon-32x32.png"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"http","message":"[GET] /api-docs/"}
+{"level":"http","message":"[GET] /api-docs/swagger-ui.css"}
+{"level":"http","message":"[GET] /api-docs/swagger-ui-bundle.js"}
+{"level":"http","message":"[GET] /api-docs/swagger-ui-standalone-preset.js"}
+{"level":"http","message":"[GET] /api-docs/swagger-ui-init.js"}
+{"level":"http","message":"[GET] /api-docs/favicon-32x32.png"}
+{"level":"http","message":"[GET] /api-docs/favicon-32x32.png"}
+{"level":"http","message":"[GET] /api/carts"}
+{"level":"http","message":"[GET] /api/carts"}
+{"level":"http","message":"[POST] /api/carts"}
+{"level":"http","message":"[POST] /api/carts"}
+{"level":"http","message":"[GET] /api/carts/bb97e9ea-5cbe-4bf2-a882-253e89bc6998"}
+{"level":"http","message":"[GET] /api-docs/"}
+{"level":"http","message":"[GET] /api-docs/swagger-ui.css"}
+{"level":"http","message":"[GET] /api-docs/swagger-ui-bundle.js"}
+{"level":"http","message":"[GET] /api-docs/swagger-ui-standalone-preset.js"}
+{"level":"http","message":"[GET] /api-docs/swagger-ui-init.js"}
+{"level":"http","message":"[GET] /api-docs/favicon-32x32.png"}
+{"level":"http","message":"[GET] /api-docs/favicon-32x32.png"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"http","message":"[GET] /api-docs/"}
+{"level":"http","message":"[GET] /api-docs/swagger-ui.css"}
+{"level":"http","message":"[GET] /api-docs/swagger-ui-bundle.js"}
+{"level":"http","message":"[GET] /api-docs/swagger-ui-standalone-preset.js"}
+{"level":"http","message":"[GET] /api-docs/swagger-ui-init.js"}
+{"level":"http","message":"[GET] /api-docs/favicon-32x32.png"}
+{"level":"http","message":"[GET] /api-docs/favicon-32x32.png"}
+{"level":"http","message":"[GET] /api/carts"}
+{"level":"http","message":"[GET] /api/carts"}
+{"level":"http","message":"[GET] /api/products"}
+{"level":"http","message":"[POST] /api/carts/820360d5-6f93-4922-80e2-6ebf1d094099/product/288b956a-0630-43fe-a3b7-e07c82cb8b8c"}
+{"level":"error","message":"UNAUTHORIZED - Unauthorized | [STATUS: 401]"}
+{"level":"http","message":"[GET] /api-docs/"}
+{"level":"http","message":"[GET] /api-docs/swagger-ui.css"}
+{"level":"http","message":"[GET] /api-docs/swagger-ui-bundle.js"}
+{"level":"http","message":"[GET] /api-docs/swagger-ui-standalone-preset.js"}
+{"level":"http","message":"[GET] /api-docs/swagger-ui-init.js"}
+{"level":"http","message":"[GET] /api-docs/favicon-32x32.png"}
+{"level":"http","message":"[GET] /api-docs/favicon-32x32.png"}
+{"level":"http","message":"[GET] /api-docs/"}
+{"level":"http","message":"[GET] /api-docs/swagger-ui.css"}
+{"level":"http","message":"[GET] /api-docs/swagger-ui-bundle.js"}
+{"level":"http","message":"[GET] /api-docs/swagger-ui-standalone-preset.js"}
+{"level":"http","message":"[GET] /api-docs/swagger-ui-init.js"}
+{"level":"http","message":"[GET] /api-docs/favicon-32x32.png"}
+{"level":"http","message":"[GET] /api-docs/favicon-32x32.png"}
+{"level":"http","message":"[GET] /api-docs/"}
+{"level":"http","message":"[GET] /api-docs/swagger-ui.css"}
+{"level":"http","message":"[GET] /api-docs/swagger-ui-bundle.js"}
+{"level":"http","message":"[GET] /api-docs/swagger-ui-standalone-preset.js"}
+{"level":"http","message":"[GET] /api-docs/swagger-ui-init.js"}
+{"level":"http","message":"[GET] /api-docs/favicon-32x32.png"}
+{"level":"http","message":"[GET] /api-docs/favicon-32x32.png"}
+{"level":"http","message":"[GET] /api-docs/"}
+{"level":"http","message":"[GET] /api-docs/swagger-ui.css"}
+{"level":"http","message":"[GET] /api-docs/swagger-ui-bundle.js"}
+{"level":"http","message":"[GET] /api-docs/swagger-ui-standalone-preset.js"}
+{"level":"http","message":"[GET] /api-docs/swagger-ui-init.js"}
+{"level":"http","message":"[GET] /api-docs/favicon-32x32.png"}
+{"level":"http","message":"[GET] /api-docs/favicon-32x32.png"}
+{"level":"http","message":"[GET] /api-docs/"}
+{"level":"http","message":"[GET] /api-docs/swagger-ui.css"}
+{"level":"http","message":"[GET] /api-docs/swagger-ui-bundle.js"}
+{"level":"http","message":"[GET] /api-docs/swagger-ui-standalone-preset.js"}
+{"level":"http","message":"[GET] /api-docs/swagger-ui-init.js"}
+{"level":"http","message":"[GET] /api-docs/favicon-32x32.png"}
+{"level":"http","message":"[GET] /api-docs/favicon-32x32.png"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"http","message":"[GET] /"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /favicon.ico"}
+{"level":"http","message":"[GET] /docs-api"}
+{"level":"http","message":"[GET] /api-docs"}
+{"level":"http","message":"[GET] /api-docs/"}
+{"level":"http","message":"[GET] /api-docs/swagger-ui.css"}
+{"level":"http","message":"[GET] /api-docs/swagger-ui-bundle.js"}
+{"level":"http","message":"[GET] /api-docs/swagger-ui-standalone-preset.js"}
+{"level":"http","message":"[GET] /api-docs/swagger-ui-init.js"}
+{"level":"http","message":"[GET] /api-docs/favicon-32x32.png"}
+{"level":"http","message":"[GET] /api-docs/favicon-32x32.png"}

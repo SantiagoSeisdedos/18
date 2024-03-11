@@ -1,0 +1,29 @@
+paths:
+  /api/products/{id}:
+    put:
+      tags:
+        - products
+      summary: Update a product by id
+      description: Update a product by id
+      operationId: putProduct
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: The id of the product
+          schema:
+            type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Product"
+      responses:
+        "201":
+          description: The product was updated
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Product"
+
+

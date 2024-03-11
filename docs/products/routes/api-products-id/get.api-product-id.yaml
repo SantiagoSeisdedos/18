@@ -1,0 +1,22 @@
+paths:
+  /api/products/{id}:
+    get:
+      tags:
+        - products
+      summary: Get a product by id
+      description: Get a product by id
+      operationId: getProduct
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: The id of the product
+          schema:
+            type: string
+      responses:
+        "200":
+          description: The product
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Product"
