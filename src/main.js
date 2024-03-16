@@ -1,55 +1,62 @@
-import "dotenv/config";
-import express from "express";
-import handlebars from "express-handlebars";
-import { Server } from "socket.io";
+// import "dotenv/config";
+// import express from "express";
+// import handlebars from "express-handlebars";
+// import { Server } from "socket.io";
 
-import {
-  injectSocketServer,
-  onConnection,
-} from "./sockets/socket.controller.js";
-import { sessions } from "./middlewares/sessions.js";
-import { apiRouter } from "./routes/api/api.router.js";
-import { webRouter } from "./routes/web/web.router.js";
-import {
-  authentication,
-  passportSession,
-} from "./middlewares/authentication.js";
-import { cookies } from "./middlewares/cookies.js";
-import { BASE_URL, PORT } from "./config/config.js";
+// import {
+//   injectSocketServer,
+//   onConnection,
+// } from "./sockets/socket.controller.js";
+// import { sessions } from "./middlewares/sessions.js";
+// import { apiRouter } from "./routes/api/api.router.js";
+// import { webRouter } from "./routes/web/web.router.js";
+// import {
+//   authentication,
+//   passportSession,
+// } from "./middlewares/authentication.js";
+// import { cookies } from "./middlewares/cookies.js";
+// import { BASE_URL, PORT } from "./config/config.js";
+// import { logger } from "./utils/logger.js";
+// import { httpLogger } from "./middlewares/httpLogger.js";
+// import { loggerTestRouter } from "./routes/api/logger.router.js";
+
 import { connect } from "../db/execution.config.js";
-import { logger } from "./utils/logger.js";
-import { httpLogger } from "./middlewares/httpLogger.js";
-import { loggerTestRouter } from "./routes/api/logger.router.js";
+import { ServerAPI } from "./app/app.js";
+import { PORT } from "./config/config.js";
 
-const app = express();
+await connect();
 
-const server = app.listen(PORT, async () => {
-  await connect();
-  logger.info(`Server on port ${PORT}: ${BASE_URL}`);
-});
+const serverAPI = new ServerAPI();
+await serverAPI.startServer(PORT);
 
-app.use(express.json());
-app.use(httpLogger);
-app.use(cookies);
-app.engine("handlebars", handlebars.engine());
-app.use(sessions);
-app.use(authentication, passportSession);
+// const app = express();
 
-// Socket.io
-const webSocketServer = new Server(server);
+// const server = app.listen(PORT, async () => {
+//   logger.info(`Server on port ${PORT}: ${BASE_URL}`);
+// });
 
-// Websocket server
-webSocketServer.on("connection", onConnection(webSocketServer));
-app.use(injectSocketServer(webSocketServer));
+// app.use(express.json());
+// app.use(httpLogger);
+// app.use(cookies);
+// app.engine("handlebars", handlebars.engine());
+// app.use(sessions);
+// app.use(authentication, passportSession);
 
-// Public files
-app.use(express.static("public"));
-app.use(express.static("views"));
-app.use(express.static("static"));
+// // Socket.io
+// const webSocketServer = new Server(server);
 
-// routers
-app.use("/loggerTest", loggerTestRouter);
-app.use("/", webRouter);
-app.use("/api", apiRouter);
+// // Websocket server
+// webSocketServer.on("connection", onConnection(webSocketServer));
+// app.use(injectSocketServer(webSocketServer));
 
-// Mensajeria 3:48:00
+// // Public files
+// app.use(express.static("public"));
+// app.use(express.static("views"));
+// app.use(express.static("static"));
+
+// // routers
+// app.use("/loggerTest", loggerTestRouter);
+// app.use("/", webRouter);
+// app.use("/api", apiRouter);
+
+// // despues del 30 min break

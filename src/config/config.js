@@ -29,15 +29,17 @@ export const PORT = process.env.PORT;
 export const EMAIL_USER = process.env.EMAIL_USER;
 export const EMAIL_PASS = process.env.EMAIL_PASS;
 
-export const loggerLevel = {
-  CONSOLE: EXECUTION_ENV === "prod" ? "error" : "http",
-  FILE: EXECUTION_ENV === "prod" ? "http" : "error",
-};
-
+// Logs on file
 // export const loggerLevel = {
-//   CONSOLE: EXECUTION_ENV === "prod" ? "http" : "http",
+//   CONSOLE: EXECUTION_ENV === "prod" ? "error" : "http",
 //   FILE: EXECUTION_ENV === "prod" ? "http" : "error",
 // };
+
+// Logs on terminal
+export const loggerLevel = {
+  CONSOLE: EXECUTION_ENV === "prod" ? "http" : "http",
+  FILE: EXECUTION_ENV === "prod" ? "http" : "error",
+};
 
 export const SWAGGER_CONFIG = {
   definition: {
