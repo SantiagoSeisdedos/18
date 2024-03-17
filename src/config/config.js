@@ -3,6 +3,8 @@ import dotenv from "dotenv";
 export const ENV = process.argv.slice(5)[0];
 
 const path = ENV ? "./src/config/prod.env" : "./src/config/dev.env";
+// const path = "./src/config/prod.env" || "./src/config/dev.env";
+
 dotenv.config({ path });
 
 export const BASE_URL =
@@ -28,6 +30,11 @@ export const PORT = process.env.PORT;
 
 export const EMAIL_USER = process.env.EMAIL_USER;
 export const EMAIL_PASS = process.env.EMAIL_PASS;
+
+export const TESTING_EMAIL = process.env.TESTING_EMAIL;
+export const TESTING_PASSWORD = process.env.TESTING_PASSWORD;
+export const TESTING_NAME = process.env.TESTING_NAME;
+export const TESTING_LASTNAME = process.env.TESTING_LASTNAME;
 
 // Logs on file
 // export const loggerLevel = {

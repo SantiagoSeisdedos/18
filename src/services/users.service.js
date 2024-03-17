@@ -58,6 +58,19 @@ class UserService {
     }
   }
 
+  async deleteUser(email) {
+    try {
+      const deletedUser = await daoUsers.deleteUser(email);
+      if (!deletedUser) {
+        const error = new Error("User not found");
+        error.code = errorStatusMap.NOT_FOUND;
+        throw error;
+      }
+      return deletedUser;
+    } catch (error) {
+      throw error;
+    }
+  }
 }
 
 export const usersService = new UserService();

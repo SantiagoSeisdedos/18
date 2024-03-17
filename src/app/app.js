@@ -29,10 +29,10 @@ export class ServerAPI {
 
   constructor() {
     this.app = express();
+    this.app.use(cookies);
 
     this.app.use(express.json());
     this.app.use(httpLogger);
-    this.app.use(cookies);
     this.app.engine("handlebars", handlebars.engine());
     this.app.use(sessions);
     this.app.use(authentication, passportSession);
@@ -57,7 +57,6 @@ export class ServerAPI {
   startServer(port = PORT, baseUrl = BASE_URL) {
     return new Promise((resolve, reject) => {
       this.#server = this.app.listen(port, () => {
-        // await connect();
         logger.info(`Server on port ${port}: ${baseUrl}`);
         resolve(this.#server);
       });

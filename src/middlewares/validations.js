@@ -30,9 +30,6 @@ export async function validateProductData(req, res, next) {
     if (!code || code.length === 0) {
       errors.push("El código es requerido.");
     }
-    if (status === undefined) {
-      errors.push("El estado es requerido.");
-    }
     if (!stock || stock.length === 0) {
       errors.push("El stock es requerido.");
     }

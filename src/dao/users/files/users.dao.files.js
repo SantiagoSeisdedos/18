@@ -4,6 +4,7 @@ import { User } from "./users.model.files.js";
 import { errorStatusMap } from "../../../utils/errorCodes.js";
 import { areHashesEqual, hashPassword } from "../../../utils/crypto.js";
 import { ADMIN_EMAIL } from "../../../config/config.js";
+import { cartsService } from "../../../services/carts.service.js";
 
 export class UsersDaoFiles {
   constructor(path) {
@@ -51,10 +52,15 @@ export class UsersDaoFiles {
         throw error;
       }
 
-      userData.password = hashPassword(userData.password);
+      userData.password = await hashPassword(userData.password);
       if (userData.email === ADMIN_EMAIL) userData.rol = "admin";
+
+      const newCart = await cartsService.createOne();
+      userData.cart = newCart;
+
       const newUser = new User(userData);
       users.push(newUser.toPOJO());
+
       await this.#writeUsers(users);
       return newUser.toPOJO();
     } catch (error) {
@@ -83,7 +89,7 @@ export class UsersDaoFiles {
     try {
       const { email, password } = credentials;
       const users = await this.#readUsers();
-      const user = users.find((user) => user.email === email);
+      const user = await users.find((user) => user.email === email);
 
       if (!user || !areHashesEqual(password, user.password)) {
         const error = new Error("Invalid credentials");
@@ -109,6 +115,23 @@ export class UsersDaoFiles {
       const credentials = { username, password };
       const user = await this.authentication(credentials);
       return user;
+    } catch (error) {
+      throw error;
+    }
+  }
+
+  async deleteUser(email) {
+    try {
+      const users = await this.#readUsers();
+      const userIndex = users.findIndex((user) => user.email === email);
+      if (userIndex === -1) {
+        const error = new Error("User not found");
+        error.code = errorStatusMap.NOT_FOUND;
+        throw error;
+      }
+      const deletedUser = users.splice(userIndex, 1);
+      await this.#writeUsers(users);
+      return deletedUser;
     } catch (error) {
       throw error;
     }
