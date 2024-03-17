@@ -27,7 +27,7 @@ const TEST_PORT = "9090";
 const baseURL = `http://localhost:${TEST_PORT}`;
 const requester = supertest(baseURL);
 
-describe.only("Server API", () => {
+describe("Server API", () => {
   const server = new ServerAPI();
 
   before(function () {

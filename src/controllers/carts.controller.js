@@ -10,7 +10,7 @@ export async function getCartsController(req, res, next) {
       throw error;
     }
 
-    res.json(carts);
+    res.status(200).json(carts);
   } catch (error) {
     next(error);
   }
@@ -31,8 +31,7 @@ export async function getCartController(req, res, next) {
       error.code = errorStatusMap.NOT_FOUND;
       throw error;
     }
-
-    res.json(cart);
+    res.status(200).json(cart);
   } catch (error) {
     next(error);
   }

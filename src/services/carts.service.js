@@ -26,6 +26,7 @@ class CartsService {
         error.code = errorStatusMap.NOT_FOUND;
         throw error;
       }
+
       return cart;
     } catch (error) {
       throw new Error(`Error en CartsService.readOne: ${error}`);

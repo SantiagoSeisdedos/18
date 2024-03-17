@@ -166,3 +166,25 @@
 {"level":"error","message":"UNAUTHORIZED - Failed to authenticate user | [STATUS: 401]"}
 {"level":"error","message":"UNAUTHORIZED - Failed to authenticate user | [STATUS: 401]"}
 {"level":"error","message":"UNAUTHORIZED - Failed to authenticate user | [STATUS: 401]"}
+{"level":"error","message":"INCORRECT_DATA - Validation failed. Product data is invalid. | [STATUS: 400]"}
+{"level":"error","message":"UNAUTHORIZED - Failed to authenticate user | [STATUS: 401]"}
+{"level":"info","message":"Database: mongodb://localhost/ecommerce"}
+{"level":"info","message":"Server on port 9090: http://localhost:3000"}
+{"level":"http","message":"[GET] /api/products"}
+{"level":"http","message":"[POST] /api/products"}
+{"level":"http","message":"[POST] /api/products"}
+{"level":"error","message":"INCORRECT_DATA - Validation failed. Product data is invalid. | [STATUS: 400]"}
+{"level":"info","message":"Database connection closed"}
+{"level":"info","message":"Database: mongodb://localhost/ecommerce"}
+{"level":"info","message":"Server on port 9090: http://localhost:3000"}
+{"level":"http","message":"[POST] /api/sessions"}
+{"level":"http","message":"[POST] /api/sessions"}
+{"level":"error","message":"UNAUTHORIZED - Failed to authenticate user | [STATUS: 401]"}
+{"level":"http","message":"[DELETE] /api/sessions/current"}
+{"level":"info","message":"Database connection closed"}
+{"level":"info","message":"Database: mongodb://localhost/ecommerce"}
+{"level":"info","message":"Server on port 9090: http://localhost:3000"}
+{"level":"http","message":"[POST] /api/users"}
+{"level":"info","message":"Database connection closed"}
+{"level":"error","message":"INCORRECT_DATA - Validation failed. Product data is invalid. | [STATUS: 400]"}
+{"level":"error","message":"UNAUTHORIZED - Failed to authenticate user | [STATUS: 401]"}
