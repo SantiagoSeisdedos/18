@@ -26,3 +26,9 @@ usersRouter.put(
   passport.authenticate("jwt", { failWithError: true, session: false }),
   UserController.updateUser
 );
+
+usersRouter.post(
+  "/premium/:uid",
+  passport.authenticate("local", { failWithError: true, session: false }),
+  UserController.login
+);
