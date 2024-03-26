@@ -73,7 +73,8 @@ export class CartsDaoFiles {
   async readOne(id) {
     try {
       const carts = await this.#readCarts();
-      const cartFound = carts.find((cart) => matches(cart.id, id));
+      // const cartFound = carts.find((cart) => matches(cart.id, id));
+      const cartFound = carts.find((cart) => cart.id === id);
       return cartFound ? toPOJO(cartFound) : null;
     } catch (error) {
       const typedError = new Error(

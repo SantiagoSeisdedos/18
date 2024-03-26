@@ -1,11 +1,11 @@
 import { Router } from "express";
 import {
-  loginUser,
-  logoutUser,
+  sesionControllerLoginUser,
+  sessionControllerLogoutUser,
 } from "../../controllers/sessions.controller.js";
 
 export const sessionsRouter = Router();
 
-sessionsRouter.post("/", loginUser);
+sessionsRouter.post("/", sesionControllerLoginUser);
 
-sessionsRouter.delete("/current", logoutUser);
+sessionsRouter.delete("/current", sessionControllerLogoutUser);

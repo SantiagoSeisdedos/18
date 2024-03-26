@@ -69,11 +69,14 @@ passport.use(
         ) {
           token = req["signedCookies"]["authorization"];
         }
+        console.log("01 jwtFromRequest After if", token);
+        console.log("02 jwtFromRequest After secretOrKey", JWT_SECRET)
         return token;
       },
       secretOrKey: JWT_SECRET,
     },
     (user, done) => {
+      console.log("04 jwt strategy", user);
       done(null, user);
     }
   )
