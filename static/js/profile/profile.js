@@ -12,6 +12,21 @@ window.addEventListener("load", async () => {
 
     const result = await response.json();
     const user = result.data; // Cambiado de result.payload a result.data
+    function mostrarMensajeLogin() {
+      Swal.fire({
+          icon: 'warning',
+          title: 'Debes estar logueado',
+          text: 'Debes iniciar sesión para acceder a esta página.',
+          confirmButtonText: 'OK',
+          showCancelButton: false
+      }).then((result) => {
+          if (result.isConfirmed) {
+              // Redirigir al usuario a la página de inicio de sesión
+              window.location.href = '/login';
+          }
+      });
+  }
+  user ? null : mostrarMensajeLogin();
 
     spans[0].innerHTML = user.name;
     spans[1].innerHTML = user.lastName;
