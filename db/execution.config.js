@@ -11,7 +11,6 @@ export async function connectMongoDB() {
   } else {
     logger.info(`Database: ${CNX_STR}`);
   }
-}
 
 export async function disconnectMongoDB() {
   await mongoose.disconnect();

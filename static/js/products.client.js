@@ -17,20 +17,44 @@ const initialize = async () => {
     const products = await response.json();
     return products;
   };
-
+ let actualPage = 1
   const renderProducts = (products) => {
     productList.innerHTML = "";
     productList.classList.add("product-list");
 
-    if (!products.hasDocuments) {
+    if (products.length === 0 || !products) {
       const p = document.createElement("p");
       p.innerHTML = products.error || "No se encontraron productos";
       const productsTitle = document.querySelector("h1");
       productsTitle.insertAdjacentElement("afterend", p);
       return;
     }
-
-    for (const product of products.docs) {
+    let cuantityPerPage = 3;
+    let productToShow = products.slice(
+      actualPage * cuantityPerPage - cuantityPerPage,
+      actualPage * cuantityPerPage
+    );
+    if (actualPage > 1) {
+      const buttonPrev = document.createElement("button");
+      buttonPrev.textContent = "<";
+      buttonPrev.addEventListener("click", (e) => {
+        e.preventDefault;
+        actualPage = actualPage - 1;
+        return renderProducts(products)
+      });
+      productList?.appendChild(buttonPrev);
+    }
+    if (actualPage < Math.ceil(products.length / cuantityPerPage) ) {
+      const buttonNext = document.createElement("button");
+      buttonNext.textContent = ">";
+      buttonNext.addEventListener("click", (e) => {
+        e.preventDefault;    
+          actualPage = actualPage + 1;  
+          return renderProducts(products)  
+      });
+      productList?.appendChild(buttonNext);
+    }
+    for (const product of productToShow) {
       const li = document.createElement("li");
       const productLink = document.createElement("a");
       productLink.textContent = `${product?.title} - $${product?.price}`;
@@ -46,7 +70,9 @@ const initialize = async () => {
     }
 
     const currentPage = document.createElement("p");
-    currentPage.textContent = `Page ${products.page} of ${products.totalPages}`;
+    currentPage.textContent = `Page ${actualPage} of ${Math.ceil(
+      products.length / cuantityPerPage
+    )}`;
     productList?.insertAdjacentElement("afterbegin", currentPage);
 
     const pagesButtonStyles = {
@@ -60,47 +86,48 @@ const initialize = async () => {
       marginLeft: "10px",
     };
 
-    if (products.prevPage) {
-      const prevPageLink = document.createElement("a");
-      prevPageLink.classList.add("pagination");
-      prevPageLink.href = "#"; // To prevent the default link behavior
-      prevPageLink.textContent = "Previous Page";
+    // if (products.prevPage) {
 
-      for (const style in pagesButtonStyles) {
-        prevPageLink.style[style] = pagesButtonStyles[style];
-      }
+    //   const prevPageLink = document.createElement("a");
+    //   prevPageLink.classList.add("pagination");
+    //   prevPageLink.href = "#"; // To prevent the default link behavior
+    //   prevPageLink.textContent = "Previous Page";
 
-      prevPageLink.addEventListener("click", async (event) => {
-        event.preventDefault();
-        const updatedProducts = await fetchProducts(
-          `/api/products?limit=${products.limit}&page=${products.prevPage}`
-        );
-        renderProducts(updatedProducts);
-      });
+    //   for (const style in pagesButtonStyles) {
+    //     prevPageLink.style[style] = pagesButtonStyles[style];
+    //   }
 
-      productList?.insertAdjacentElement("afterbegin", prevPageLink);
-    }
+    //   prevPageLink.addEventListener("click", async (event) => {
+    //     event.preventDefault();
+    //     const updatedProducts = await fetchProducts(
+    //       `/api/products?limit=${products.limit}&page=${products.prevPage}`
+    //     );
+    //     renderProducts(updatedProducts);
+    //   });
 
-    if (products.nextPage) {
-      const nextPageLink = document.createElement("a");
-      nextPageLink.classList.add("pagination");
-      nextPageLink.href = "#";
-      nextPageLink.textContent = "Next Page";
+    //   productList?.insertAdjacentElement("afterbegin", prevPageLink);
+    // }
 
-      for (const style in pagesButtonStyles) {
-        nextPageLink.style[style] = pagesButtonStyles[style];
-      }
+    // if (products.nextPage) {
+    //   const nextPageLink = document.createElement("a");
+    //   nextPageLink.classList.add("pagination");
+    //   nextPageLink.href = "#";
+    //   nextPageLink.textContent = "Next Page";
 
-      nextPageLink.addEventListener("click", async (event) => {
-        event.preventDefault();
-        const updatedProducts = await fetchProducts(
-          `/api/products?limit=${products.limit}&page=${products.nextPage}`
-        );
-        renderProducts(updatedProducts);
-      });
+    //   for (const style in pagesButtonStyles) {
+    //     nextPageLink.style[style] = pagesButtonStyles[style];
+    //   }
 
-      productList?.insertAdjacentElement("afterbegin", nextPageLink);
-    }
+    //   nextPageLink.addEventListener("click", async (event) => {
+    //     event.preventDefault();
+    //     const updatedProducts = await fetchProducts(
+    //       `/api/products?limit=${products.limit}&page=${products.nextPage}`
+    //     );
+    //     renderProducts(updatedProducts);
+    //   });
+
+    //   productList?.insertAdjacentElement("afterbegin", nextPageLink);
+    // }
   };
 
   // Fetch and render initial products

@@ -39,44 +39,20 @@ const updateHeader = (username) => {
 };
 
 // Enter username
-Swal.fire({
-  title: "Bienvenido!",
-  input: "text",
-  confirmButtonText: "Entrar",
-  showLoaderOnConfirm: false,
-  allowOutsideClick: false,
-}).then((result) => {
-  if (!result.value) {
-    Swal.fire({
-      title: "Error!",
-      text: "Debes ingresar un nombre de usuario",
-      icon: "error",
-      confirmButtonText: "Ok",
-    }).then(() => {
-      window.location.href = "/products";
-    });
-  } else if (validMembers.includes(result.value.toLowerCase())) {
-    Swal.fire({
-      title: `Bienvenido ${result.value}`,
-      icon: "success",
-      timer: 1500,
-      timerProgressBar: true,
-      showConfirmButton: false,
-    });
-    updateHeader(result.value);
-    sendProductData(result.value);
-  } else {
-    Swal.fire({
-      title: "Error!",
-      text: "No estás autorizado para ingresar",
-      icon: "error",
-      confirmButtonText: "Ok",
-    }).then(() => {
-      window.location.href = `/products?lastAttemptedUsername=${result.value}`;
-      // window.location.href = "/";
-    });
-  }
-});
+function mostrarMensajeLogin() {
+  Swal.fire({
+      icon: 'warning',
+      title: 'Debes estar logueado',
+      text: 'Debes iniciar sesión para acceder a esta página.',
+      confirmButtonText: 'OK',
+      showCancelButton: false
+  }).then((result) => {
+      if (result.isConfirmed) {
+          // Redirigir al usuario a la página de inicio de sesión
+          window.location.href = '/login';
+      }
+  });
+}
 
 const sendProductData = async (username) => {
   const socket = io({

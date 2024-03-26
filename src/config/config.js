@@ -42,6 +42,7 @@ export const TESTING_LASTNAME = process.env.TESTING_LASTNAME;
 //   FILE: EXECUTION_ENV === "prod" ? "http" : "error",
 // };
 
+
 // Logs on terminal
 export const loggerLevel = {
   CONSOLE: EXECUTION_ENV === "prod" ? "http" : "http",
