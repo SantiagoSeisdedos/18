@@ -188,3 +188,1202 @@
 {"level":"info","message":"Database connection closed"}
 {"level":"error","message":"INCORRECT_DATA - Validation failed. Product data is invalid. | [STATUS: 400]"}
 {"level":"error","message":"UNAUTHORIZED - Failed to authenticate user | [STATUS: 401]"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"http","message":"[GET] /"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /favicon.ico"}
+{"level":"http","message":"[GET] /register"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /js/onboarding/register.js"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[POST] /api/users"}
+{"level":"error","message":"undefined - user is not defined | [STATUS: 500]"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /register"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /js/onboarding/register.js"}
+{"level":"http","message":"[POST] /api/users"}
+{"level":"error","message":"DUPLICATED_KEY - User email already exists | [STATUS: 409]"}
+{"level":"http","message":"[GET] /profile"}
+{"level":"http","message":"[GET] /js/profile/profile.js"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /api/users/current"}
+{"level":"error","message":"UNAUTHORIZED - Unauthorized | [STATUS: 401]"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"http","message":"[GET] /register"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /js/onboarding/register.js"}
+{"level":"http","message":"[POST] /api/users"}
+{"level":"error","message":"undefined - user is not defined | [STATUS: 500]"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"http","message":"[POST] /api/users"}
+{"level":"error","message":"undefined - Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to\n535 5.7.8  https://support.google.com/mail/?p=BadCredentials a6-20020aa78e86000000b006e5a09708f8sm113184pfr.174 - gsmtp | [STATUS: EAUTH]"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"http","message":"[POST] /api/users"}
+{"level":"error","message":"undefined - Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to\n535 5.7.8  https://support.google.com/mail/?p=BadCredentials e15-20020a170902784f00b001dde004b31bsm106704pln.166 - gsmtp | [STATUS: EAUTH]"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"http","message":"[POST] /api/users"}
+{"level":"http","message":"[GET] /profile"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /js/profile/profile.js"}
+{"level":"http","message":"[GET] /api/users/current"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"http","message":"[GET] /login"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /js/onboarding/login.js"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /profile"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /js/profile/profile.js"}
+{"level":"http","message":"[GET] /api/users/current"}
+{"level":"http","message":"[DELETE] /api/sessions/current"}
+{"level":"http","message":"[DELETE] /api/sessions/current"}
+{"level":"http","message":"[GET] /profile"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /js/profile/profile.js"}
+{"level":"http","message":"[GET] /api/users/current"}
+{"level":"error","message":"UNAUTHORIZED - Unauthorized | [STATUS: 401]"}
+{"level":"http","message":"[GET] /profile"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /js/profile/profile.js"}
+{"level":"http","message":"[GET] /api/users/current"}
+{"level":"error","message":"UNAUTHORIZED - Unauthorized | [STATUS: 401]"}
+{"level":"http","message":"[GET] /register"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /js/onboarding/register.js"}
+{"level":"http","message":"[GET] /login"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /js/onboarding/login.js"}
+{"level":"http","message":"[GET] /resetPassword"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /js/profile/resetPassword.js"}
+{"level":"http","message":"[PUT] /api/users"}
+{"level":"error","message":"UNAUTHORIZED - Unauthorized | [STATUS: 401]"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"http","message":"[GET] /api/users/santiagoseisdedos@hotmail.com"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"http","message":"[GET] /login"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /js/onboarding/login.js"}
+{"level":"http","message":"[GET] /login"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /js/onboarding/login.js"}
+{"level":"http","message":"[GET] /resetPassword"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /js/profile/resetPassword.js"}
+{"level":"http","message":"[GET] /resetPassword"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /js/profile/resetPassword.js"}
+{"level":"http","message":"[GET] /resetPassword"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /js/profile/resetPassword.js"}
+{"level":"http","message":"[GET] /resetPassword"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /js/profile/resetPassword.js"}
+{"level":"http","message":"[GET] /resetPassword"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /js/profile/resetPassword.js"}
+{"level":"http","message":"[GET] /resetPassword"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /js/profile/resetPassword.js"}
+{"level":"http","message":"[GET] /resetPassword"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /js/profile/resetPassword.js"}
+{"level":"http","message":"[GET] /resetPassword"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /js/profile/resetPassword.js"}
+{"level":"http","message":"[GET] /resetPassword"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /js/profile/resetPassword.js"}
+{"level":"http","message":"[GET] /resetPassword"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /js/profile/resetPassword.js"}
+{"level":"http","message":"[GET] /resetPassword"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /js/profile/resetPassword.js"}
+{"level":"http","message":"[GET] /resetPassword"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /js/profile/resetPassword.js"}
+{"level":"http","message":"[GET] /resetPassword"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /js/profile/resetPassword.js"}
+{"level":"http","message":"[GET] /resetPassword"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /js/profile/resetPassword.js"}
+{"level":"http","message":"[GET] /resetPassword"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /js/profile/resetPassword.js"}
+{"level":"http","message":"[GET] /resetPassword"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /js/profile/resetPassword.js"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"http","message":"[GET] /resetPassword"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /js/profile/resetPassword.js"}
+{"level":"http","message":"[POST] /api/users/reset"}
+{"level":"error","message":"undefined - Cannot read properties of undefined (reading 'email') | [STATUS: 500]"}
+{"level":"http","message":"[POST] /api/users/reset"}
+{"level":"error","message":"undefined - Cannot read properties of undefined (reading 'email') | [STATUS: 500]"}
+{"level":"http","message":"[POST] /api/users/reset"}
+{"level":"error","message":"undefined - Cannot read properties of undefined (reading 'email') | [STATUS: 500]"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"http","message":"[POST] /api/users/reset"}
+{"level":"error","message":"undefined - Cannot read properties of undefined (reading 'email') | [STATUS: 500]"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"http","message":"[POST] /api/users/reset"}
+{"level":"error","message":"undefined - Cannot read properties of undefined (reading 'email') | [STATUS: 500]"}
+{"level":"http","message":"[GET] /resetPassword"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /js/profile/resetPassword.js"}
+{"level":"http","message":"[POST] /api/users/reset"}
+{"level":"error","message":"undefined - Cannot read properties of undefined (reading 'email') | [STATUS: 500]"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"http","message":"[GET] /resetPassword"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /js/profile/resetPassword.js"}
+{"level":"http","message":"[POST] /api/users/reset"}
+{"level":"error","message":"undefined - Cannot read properties of undefined (reading 'email') | [STATUS: 500]"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"http","message":"[GET] /resetPassword"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /js/profile/resetPassword.js"}
+{"level":"http","message":"[POST] /api/users/reset"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"http","message":"[POST] /api/users/reset"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"http","message":"[POST] /api/users/reset"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"http","message":"[POST] /api/users/reset"}
+{"level":"error","message":"undefined - req is not defined | [STATUS: 500]"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"http","message":"[GET] /resetPassword"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /js/profile/resetPassword.js"}
+{"level":"http","message":"[POST] /api/users/reset"}
+{"level":"error","message":"undefined - jwt is not defined | [STATUS: 500]"}
+{"level":"http","message":"[POST] /api/users/reset"}
+{"level":"error","message":"NOT_FOUND - User not found | [STATUS: 404]"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"http","message":"[GET] /resetPassword"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /js/profile/resetPassword.js"}
+{"level":"http","message":"[POST] /api/users/reset"}
+{"level":"http","message":"[GET] /login"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /js/onboarding/login.js"}
+{"level":"http","message":"[GET] /resetPassword?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNhbnRpYWdvQHNwaGVyZW9uZS54eXoiLCJpYXQiOjE3MTE1OTU2OTgsImV4cCI6MTcxMTU5OTI5OH0.x_yeLiV2IAw1kx9WxvTWvQIrlsFSMyXLEjeIfS9rS8g"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /js/profile/resetPassword.js"}
+{"level":"http","message":"[GET] /favicon.ico"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"http","message":"[GET] /products"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /socket.io/socket.io.js"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /js/products.client.js"}
+{"level":"http","message":"[GET] /api/products"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"http","message":"[GET] /resetPassword"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /css/recoverAccount.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /js/profile/resetPassword.js"}
+{"level":"http","message":"[GET] /"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /css/recoverAccount.client.css"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/recoverAccount.client.css"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /css/recoverAccount.client.css"}
+{"level":"http","message":"[GET] /"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /css/recoverAccount.client.css"}
+{"level":"http","message":"[GET] /"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /css/recoverAccount.client.css"}
+{"level":"http","message":"[GET] /"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /css/recoverAccount.client.css"}
+{"level":"http","message":"[GET] /login"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /css/recoverAccount.client.css"}
+{"level":"http","message":"[GET] /js/onboarding/login.js"}
+{"level":"http","message":"[GET] /resetPassword"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /css/recoverAccount.client.css"}
+{"level":"http","message":"[GET] /js/profile/resetPassword.js"}
+{"level":"http","message":"[POST] /api/users/reset"}
+{"level":"http","message":"[GET] /recoverAccount?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNhbnRpYWdvQHNwaGVyZW9uZS54eXoiLCJpYXQiOjE3MTE1OTk2NzgsImV4cCI6MTcxMTYwMzI3OH0.6GkRQXO4NYYX6X5EvKnjKLgqlmh7l3CQ96pFICcJf2U"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /css/recoverAccount.client.css"}
+{"level":"http","message":"[GET] /js/profile/recoverAccount.js"}
+{"level":"http","message":"[GET] /recoverAccount?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNhbnRpYWdvQHNwaGVyZW9uZS54eXoiLCJpYXQiOjE3MTE1OTk2NzgsImV4cCI6MTcxMTYwMzI3OH0.6GkRQXO4NYYX6X5EvKnjKLgqlmh7l3CQ96pFICcJf2U"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /css/recoverAccount.client.css"}
+{"level":"http","message":"[GET] /js/profile/recoverAccount.js"}
+{"level":"http","message":"[GET] /recoverAccount?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNhbnRpYWdvQHNwaGVyZW9uZS54eXoiLCJpYXQiOjE3MTE1OTk2NzgsImV4cCI6MTcxMTYwMzI3OH0.6GkRQXO4NYYX6X5EvKnjKLgqlmh7l3CQ96pFICcJf2U"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /css/recoverAccount.client.css"}
+{"level":"http","message":"[GET] /js/profile/recoverAccount.js"}
+{"level":"http","message":"[POST] /api/users/recoverAccount"}
+{"level":"error","message":"undefined - jwt is not defined | [STATUS: 500]"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"http","message":"[GET] /login"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /css/recoverAccount.client.css"}
+{"level":"http","message":"[GET] /js/onboarding/login.js"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"http","message":"[GET] /resetPassword"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /css/recoverAccount.client.css"}
+{"level":"http","message":"[GET] /js/profile/resetPassword.js"}
+{"level":"http","message":"[POST] /api/users/reset"}
+{"level":"http","message":"[GET] /login"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /css/recoverAccount.client.css"}
+{"level":"http","message":"[GET] /js/onboarding/login.js"}
+{"level":"http","message":"[GET] /recoverAccount?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNhbnRpYWdvQHNwaGVyZW9uZS54eXoiLCJpYXQiOjE3MTE1OTk5MzYsImV4cCI6MTcxMTYwMzUzNn0.X8emsT3C1PUjkypU79AgPIvoOu1TPz0gHksk7opKooE"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /css/recoverAccount.client.css"}
+{"level":"http","message":"[GET] /js/profile/recoverAccount.js"}
+{"level":"http","message":"[POST] /api/users/recoverAccount"}
+{"level":"error","message":"undefined - JWT_SECRET is not defined | [STATUS: 500]"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"http","message":"[POST] /api/users/recoverAccount"}
+{"level":"error","message":"UNEXPECTED_ERROR - Password not updated | [STATUS: 500]"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"http","message":"[GET] /login"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/recoverAccount.client.css"}
+{"level":"http","message":"[GET] /js/onboarding/login.js"}
+{"level":"http","message":"[POST] /api/sessions"}
+{"level":"http","message":"[GET] /profile"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /css/recoverAccount.client.css"}
+{"level":"http","message":"[GET] /js/profile/profile.js"}
+{"level":"http","message":"[GET] /api/users/current"}
+{"level":"http","message":"[DELETE] /api/sessions/current"}
+{"level":"http","message":"[GET] /profile"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /css/recoverAccount.client.css"}
+{"level":"http","message":"[GET] /js/profile/profile.js"}
+{"level":"http","message":"[GET] /api/users/current"}
+{"level":"error","message":"UNAUTHORIZED - Unauthorized | [STATUS: 401]"}
+{"level":"http","message":"[GET] /register"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /css/recoverAccount.client.css"}
+{"level":"http","message":"[GET] /js/onboarding/register.js"}
+{"level":"http","message":"[GET] /login"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /css/recoverAccount.client.css"}
+{"level":"http","message":"[GET] /js/onboarding/login.js"}
+{"level":"http","message":"[GET] /resetPassword"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /css/recoverAccount.client.css"}
+{"level":"http","message":"[GET] /js/profile/resetPassword.js"}
+{"level":"http","message":"[POST] /api/users/reset"}
+{"level":"http","message":"[GET] /login"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /css/recoverAccount.client.css"}
+{"level":"http","message":"[GET] /js/onboarding/login.js"}
+{"level":"http","message":"[GET] /recoverAccount?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNhbnRpYWdvQHNwaGVyZW9uZS54eXoiLCJpYXQiOjE3MTE2MDA0NTAsImV4cCI6MTcxMTYwNDA1MH0.cyygBRijRvBg0O10QgJAe-i-FRGzjKU_k_JY7ED6Wa4"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /css/recoverAccount.client.css"}
+{"level":"http","message":"[GET] /js/profile/recoverAccount.js"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"http","message":"[POST] /api/users/recoverAccount"}
+{"level":"http","message":"[GET] /login"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /css/recoverAccount.client.css"}
+{"level":"http","message":"[GET] /js/onboarding/login.js"}
+{"level":"http","message":"[POST] /api/sessions"}
+{"level":"http","message":"[GET] /profile"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /css/recoverAccount.client.css"}
+{"level":"http","message":"[GET] /js/profile/profile.js"}
+{"level":"http","message":"[GET] /api/users/current"}
+{"level":"http","message":"[DELETE] /api/sessions/current"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"http","message":"[GET] /profil"}
+{"level":"http","message":"[GET] /"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /css/recoverAccount.client.css"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"info","message":"Database: mongodb+srv://santiago:LfLsVBNa8GJM9LX@coderhouse.rqxyiiw.mongodb.net/ecommerce"}
+{"level":"info","message":"Server on port 8080: http://localhost:8080"}
+{"level":"http","message":"[GET] /register"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /css/recoverAccount.client.css"}
+{"level":"http","message":"[GET] /js/onboarding/register.js"}
+{"level":"http","message":"[GET] /register"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /css/recoverAccount.client.css"}
+{"level":"http","message":"[GET] /js/onboarding/register.js"}
+{"level":"http","message":"[GET] /recoverAccount"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /css/recoverAccount.client.css"}
+{"level":"http","message":"[GET] /js/profile/recoverAccount.js"}
+{"level":"http","message":"[GET] /recoverAccount"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /css/recoverAccount.client.css"}
+{"level":"http","message":"[GET] /js/profile/recoverAccount.js"}
+{"level":"http","message":"[GET] /recoverAccount"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /css/recoverAccount.client.css"}
+{"level":"http","message":"[GET] /js/profile/recoverAccount.js"}
+{"level":"http","message":"[GET] /recoverAccount"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /css/recoverAccount.client.css"}
+{"level":"http","message":"[GET] /js/profile/recoverAccount.js"}
+{"level":"http","message":"[GET] /recoverAccount"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /css/recoverAccount.client.css"}
+{"level":"http","message":"[GET] /js/profile/recoverAccount.js"}
+{"level":"http","message":"[GET] /recoverAccount"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /css/recoverAccount.client.css"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /js/profile/recoverAccount.js"}
+{"level":"http","message":"[GET] /recoverAccount"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /css/recoverAccount.client.css"}
+{"level":"http","message":"[GET] /js/profile/recoverAccount.js"}
+{"level":"http","message":"[GET] /recoverAccount"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/recoverAccount.client.css"}
+{"level":"http","message":"[GET] /js/profile/recoverAccount.js"}
+{"level":"http","message":"[GET] /recoverAccount"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /css/recoverAccount.client.css"}
+{"level":"http","message":"[GET] /js/profile/recoverAccount.js"}
+{"level":"http","message":"[GET] /recoverAccount"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /css/recoverAccount.client.css"}
+{"level":"http","message":"[GET] /js/profile/recoverAccount.js"}
+{"level":"http","message":"[GET] /recoverAccount"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /css/recoverAccount.client.css"}
+{"level":"http","message":"[GET] /js/profile/recoverAccount.js"}
+{"level":"http","message":"[GET] /recoverAccount"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /css/recoverAccount.client.css"}
+{"level":"http","message":"[GET] /js/profile/recoverAccount.js"}
+{"level":"http","message":"[GET] /recoverAccount"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /css/recoverAccount.client.css"}
+{"level":"http","message":"[GET] /js/profile/recoverAccount.js"}
+{"level":"http","message":"[GET] /recoverAccount"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /css/recoverAccount.client.css"}
+{"level":"http","message":"[GET] /js/profile/recoverAccount.js"}
+{"level":"http","message":"[GET] /recoverAccount"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /css/recoverAccount.client.css"}
+{"level":"http","message":"[GET] /js/profile/recoverAccount.js"}
+{"level":"http","message":"[GET] /recoverAccount"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /css/recoverAccount.client.css"}
+{"level":"http","message":"[GET] /js/profile/recoverAccount.js"}
+{"level":"http","message":"[GET] /recoverAccount"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /css/recoverAccount.client.css"}
+{"level":"http","message":"[GET] /js/profile/recoverAccount.js"}
+{"level":"http","message":"[GET] /recoverAccount"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /css/recoverAccount.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /js/profile/recoverAccount.js"}
+{"level":"http","message":"[GET] /recoverAccount"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /css/recoverAccount.client.css"}
+{"level":"http","message":"[GET] /js/profile/recoverAccount.js"}
+{"level":"http","message":"[GET] /recoverAccount"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /css/recoverAccount.client.css"}
+{"level":"http","message":"[GET] /js/profile/recoverAccount.js"}
+{"level":"http","message":"[GET] /recoverAccount"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /css/recoverAccount.client.css"}
+{"level":"http","message":"[GET] /js/profile/recoverAccount.js"}
+{"level":"http","message":"[GET] /recoverAccount"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /css/recoverAccount.client.css"}
+{"level":"http","message":"[GET] /js/profile/recoverAccount.js"}
+{"level":"http","message":"[GET] /recoverAccount"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /css/recoverAccount.client.css"}
+{"level":"http","message":"[GET] /js/profile/recoverAccount.js"}
+{"level":"http","message":"[GET] /register"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /css/recoverAccount.client.css"}
+{"level":"http","message":"[GET] /js/onboarding/register.js"}
+{"level":"http","message":"[GET] /register"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /css/recoverAccount.client.css"}
+{"level":"http","message":"[GET] /js/onboarding/register.js"}
+{"level":"http","message":"[GET] /register"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /css/recoverAccount.client.css"}
+{"level":"http","message":"[GET] /js/onboarding/register.js"}
+{"level":"http","message":"[GET] /register"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /css/recoverAccount.client.css"}
+{"level":"http","message":"[GET] /js/onboarding/register.js"}
+{"level":"http","message":"[GET] /register"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /css/recoverAccount.client.css"}
+{"level":"http","message":"[GET] /js/onboarding/register.js"}
+{"level":"http","message":"[GET] /register"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /css/recoverAccount.client.css"}
+{"level":"http","message":"[GET] /js/onboarding/register.js"}
+{"level":"http","message":"[GET] /register"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /css/recoverAccount.client.css"}
+{"level":"http","message":"[GET] /js/onboarding/register.js"}
+{"level":"http","message":"[GET] /register"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /css/recoverAccount.client.css"}
+{"level":"http","message":"[GET] /js/onboarding/register.js"}
+{"level":"http","message":"[GET] /register"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /css/recoverAccount.client.css"}
+{"level":"http","message":"[GET] /js/onboarding/register.js"}
+{"level":"http","message":"[GET] /register"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /css/recoverAccount.client.css"}
+{"level":"http","message":"[GET] /js/onboarding/register.js"}
+{"level":"http","message":"[GET] /register"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /css/recoverAccount.client.css"}
+{"level":"http","message":"[GET] /js/onboarding/register.js"}
+{"level":"http","message":"[GET] /login"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /css/recoverAccount.client.css"}
+{"level":"http","message":"[GET] /js/onboarding/login.js"}
+{"level":"http","message":"[GET] /profile"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /css/recoverAccount.client.css"}
+{"level":"http","message":"[GET] /js/profile/profile.js"}
+{"level":"http","message":"[GET] /api/users/current"}
+{"level":"error","message":"UNAUTHORIZED - Unauthorized | [STATUS: 401]"}
+{"level":"http","message":"[GET] /register"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /css/recoverAccount.client.css"}
+{"level":"http","message":"[GET] /js/onboarding/register.js"}
+{"level":"http","message":"[GET] /login"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /css/recoverAccount.client.css"}
+{"level":"http","message":"[GET] /js/onboarding/login.js"}
+{"level":"http","message":"[GET] /profile"}
+{"level":"http","message":"[GET] /css/products.client.css"}
+{"level":"http","message":"[GET] /css/productDetails.client.css"}
+{"level":"http","message":"[GET] /css/cartDetails.client.css"}
+{"level":"http","message":"[GET] /css/navBar.client.css"}
+{"level":"http","message":"[GET] /css/resetPassword.client.css"}
+{"level":"http","message":"[GET] /css/recoverAccount.client.css"}
+{"level":"http","message":"[GET] /js/profile/profile.js"}
+{"level":"http","message":"[GET] /api/users/current"}
+{"level":"error","message":"UNAUTHORIZED - Unauthorized | [STATUS: 401]"}
